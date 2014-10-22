@@ -15,9 +15,7 @@ public class DynamicGravityDirection : MonoBehaviour {
 	void Start () {
 		tf = GetComponent<Transform>();
 		sphereCollider = GetComponent<SphereCollider>();
-		
-		lineRender = GetComponent<LineRenderer>();
-		
+
 		Player = GameObject.FindGameObjectWithTag("player");
 	}
 	
