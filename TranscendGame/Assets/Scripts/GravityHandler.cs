@@ -11,7 +11,7 @@ public class GravityHandler : MonoBehaviour {
 	void Start () {
 		rigBody = GetComponent<Rigidbody>();
 		
-		Gravity = new Vector3(0f, 0f, 0f);
+		Gravity = new Vector3(0f, -1f, 0f);
 	}
 	
 	// Update is called once per frame
