@@ -5,9 +5,7 @@ public class DynamicGravityDirection : MonoBehaviour {
 	
 	Transform tf;
 	Collider sphereCollider;
-	
-	LineRenderer lineRender;
-	
+
 	GameObject Player;
 	
 	public Vector3 GravDirection;
