@@ -19,7 +19,7 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		GravDirection = -tf.up;
 		GravDirection = new Vector3(GravScale * GravDirection.x,
 		                            GravScale * GravDirection.y,

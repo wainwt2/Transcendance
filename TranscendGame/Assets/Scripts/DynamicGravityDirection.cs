@@ -22,7 +22,7 @@ public class DynamicGravityDirection : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		GravDirection = tf.position - Player.GetComponent<Transform>().position;
 		GravDirection = GravDirection.normalized;
 		GravDirection = new Vector3(GravScale * GravDirection.x,
