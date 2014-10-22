@@ -26,7 +26,7 @@ public class GravityHandler : MonoBehaviour {
 		}
 		if (other.gameObject.tag == "AbsGravVolume") {
 			Debug.Log("absGrav");
-			Gravity = other.gameObject.GetComponent<AbsoluteGravityDirectiion>().GravDirection;
+			Gravity = other.gameObject.GetComponent<AbsoluteGravityDirection>().GravDirection;
 		}
 	}
 }

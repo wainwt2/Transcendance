@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AbsoluteGravityDirectiion : MonoBehaviour {
+public class AbsoluteGravityDirection : MonoBehaviour {
 	
 	Transform tf;
 	Collider collider;
