@@ -28,13 +28,8 @@ public class DynamicGravityDirection : MonoBehaviour {
 		GravDirection = new Vector3(GravScale * GravDirection.x,
 		                            GravScale * GravDirection.y,
 		                            GravScale * GravDirection.z);
-		
-		
+
 		Debug.Log(GravDirection);
 	}
-	
-	void debugLines() {
-		lineRender.SetPosition(0, Player.GetComponent<Transform>().position);
-		lineRender.SetPosition(1, tf.position);
-	}
+
 }
