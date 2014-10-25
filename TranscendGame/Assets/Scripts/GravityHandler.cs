@@ -5,9 +5,11 @@ public class GravityHandler : MonoBehaviour {
 
 	Transform tf;
 	Rigidbody rigBody;
-	
+
 	public Vector3 Gravity;//Down direction for this gameObject. Set on Trigger Event
 	//public Vector3 GravityHolder;
+	public Vector3 gravForward;
+	public Vector3 gravRight;
 
 	public float GravityMagnitude = 9.8f;
 	public float TerminalVelocity = 5.0f;
@@ -27,17 +29,6 @@ public class GravityHandler : MonoBehaviour {
 		rigBody.AddForce(Gravity);
 
 		rigBody.velocity = Vector3.ClampMagnitude(rigBody.velocity, TerminalVelocity);
-	}
-	
-	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "DynGravVolume") {
-			Debug.Log("dynGrav");
-			//Gravity = other.gameObject.GetComponent<DynamicGravityDirection>().GravDirection;
-		}
-		if (other.gameObject.tag == "AbsGravVolume") {
-			Debug.Log("absGrav");
-			//Gravity = other.gameObject.GetComponent<AbsoluteGravityDirection>().GravDirection;
-		}
 	}
 
 	public void applyNewGravDirection(Vector3 gravDirection, Quaternion gravRotation) {

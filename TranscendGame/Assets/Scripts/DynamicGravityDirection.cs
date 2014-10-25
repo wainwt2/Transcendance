@@ -30,4 +30,10 @@ public class DynamicGravityDirection : MonoBehaviour {
 		//Debug.Log(GravDirection);
 	}
 
+	void onTriggerEnter(Collider other) {
+		if (other.gameObject.tag == "player") {
+			Debug.Log("kerblam");
+		}
+	}
+
 }
