@@ -8,6 +8,7 @@ public class PlayerMotor : MonoBehaviour {
 	public float deadZone = 0.05f;
 	public float vel = 2.0f;
 	public float maxVel = 8.0f;
+	public static float playerScale = 1.0f;
 	private Vector3 forwardVector;
 	private Transform tf;
 	private Rigidbody rb;
@@ -29,13 +30,13 @@ public class PlayerMotor : MonoBehaviour {
 		vAxis = Input.GetAxis("Vertical");
 		// Vector calculations
 		if (!(Mathf.Abs(hAxis) < deadZone && Mathf.Abs(vAxis) < deadZone)) {
-			forwardVector = Vector3.forward * vAxis + Vector3.right * hAxis;
+			forwardVector = GetComponent<GravityHandler>().gravForward * vAxis + GetComponent<GravityHandler>().gravRight * hAxis;
 			if (forwardVector.magnitude > 1.0f) {
 				forwardVector.Normalize();
 			}
-			Debug.DrawRay(tf.position, forwardVector * vel, Color.red);
+			Debug.DrawRay(tf.position, forwardVector * vel * playerScale, Color.red);
 			tf.rotation = Quaternion.LookRotation(forwardVector, GetComponent<GravityHandler>().Gravity);
-			rb.AddForce(tf.forward * vel);
+			rb.AddForce(tf.forward * vel * playerScale);
 		}
 		else {
 			tf.rotation = Quaternion.LookRotation(forwardVector, GetComponent<GravityHandler>().Gravity);

@@ -20,6 +20,8 @@ public class GravityHandler : MonoBehaviour {
 		rigBody = GetComponent<Rigidbody>();
 		
 		Gravity = new Vector3(0f, -1f, 0f) * GravityMagnitude;
+		gravForward = Vector3.forward;
+		gravRight = Vector3.right;
 
 	}
 	
