@@ -17,6 +17,7 @@ public class PlayerMotor : MonoBehaviour {
 		deadZone = 0.05f;
 		tf = GetComponent<Transform>();
 		rb = GetComponent<Rigidbody>();
+		forwardVector = tf.forward;
 	}
 	
 	// Update is called once per frame
@@ -35,6 +36,9 @@ public class PlayerMotor : MonoBehaviour {
 			Debug.DrawRay(tf.position, forwardVector * vel, Color.red);
 			tf.rotation = Quaternion.LookRotation(forwardVector, GetComponent<GravityHandler>().Gravity);
 			rb.AddForce(tf.forward * vel);
+		}
+		else {
+			tf.rotation = Quaternion.LookRotation(forwardVector, GetComponent<GravityHandler>().Gravity);
 		}
 	}
 	
