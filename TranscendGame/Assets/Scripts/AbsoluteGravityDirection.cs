@@ -25,10 +25,13 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 		                            GravScale * GravDirection.y,
 		                            GravScale * GravDirection.z);
 		
-		//Debug.Log(GravDirection);
+		Debug.Log(GravDirection);
 	}
 	
 	void OnTriggerEnter(Collider other) {
-		//set player's gravitational direction to GravDirection
+		if (other.gameObject.tag == "player") {
+			Debug.Log("boom");
+			other.gameObject.GetComponent<GravityHandler>().applyNewGravDirection(GravDirection, tf.rotation);
+		}
 	}
 }

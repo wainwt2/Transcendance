@@ -9,7 +9,7 @@ public class DynamicGravityDirection : MonoBehaviour {
 	GameObject Player;
 	
 	public Vector3 GravDirection;
-	public float GravScale = 1f;
+	public float GravScale = 9.8f;
 	
 	// Use this for initialization
 	void Start () {
@@ -27,7 +27,7 @@ public class DynamicGravityDirection : MonoBehaviour {
 		                            GravScale * GravDirection.y,
 		                            GravScale * GravDirection.z);
 
-		Debug.Log(GravDirection);
+		//Debug.Log(GravDirection);
 	}
 
 }
