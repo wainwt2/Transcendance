@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Author: Dom Cristaldi
+//Game: Transcendance
+
+using UnityEngine;
 using System.Collections;
 
 public class GravityHandler : MonoBehaviour {
