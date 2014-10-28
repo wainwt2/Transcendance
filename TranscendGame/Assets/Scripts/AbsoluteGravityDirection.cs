@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿//Author: Dom Cristaldi
+//Game: Transcendance
+
+using UnityEngine;
 using System.Collections;
 
 public class AbsoluteGravityDirection : MonoBehaviour {
 	
 	Transform tf;
-	Collider collider;
+	BoxCollider collider;
 	
 	GameObject Player;
 	
@@ -26,6 +29,8 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 		                            GravScale * GravDirection.z);
 		
 		//Debug.Log(GravDirection);
+
+
 	}
 	
 	void OnTriggerEnter(Collider other) {
@@ -36,4 +41,11 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 			other.gameObject.GetComponent<GravityHandler>().gravRight = tf.right;
 		}
 	}
+
+	/*
+	void OnDrawGizmos() {
+		Gizmos.color = Color.red;
+		Gizmos.DrawCube(collider.center, collider.size);
+	}
+	*/
 }
