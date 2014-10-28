@@ -12,6 +12,7 @@ public class PlayerMotor : MonoBehaviour {
 	private Vector3 forwardVector;
 	private Transform tf;
 	private Rigidbody rb;
+	public bool canMove;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,7 @@ public class PlayerMotor : MonoBehaviour {
 		tf = GetComponent<Transform>();
 		rb = GetComponent<Rigidbody>();
 		forwardVector = tf.forward;
+		canMove = true;
 	}
 	
 	// Update is called once per frame
@@ -29,7 +31,7 @@ public class PlayerMotor : MonoBehaviour {
 		hAxis = Input.GetAxis("Horizontal");
 		vAxis = Input.GetAxis("Vertical");
 		// Vector calculations
-		if (!(Mathf.Abs(hAxis) < deadZone && Mathf.Abs(vAxis) < deadZone)) {
+		if (!(Mathf.Abs(hAxis) < deadZone && Mathf.Abs(vAxis) < deadZone) && canMove) {
 			forwardVector = GetComponent<GravityHandler>().gravForward * vAxis + GetComponent<GravityHandler>().gravRight * hAxis;
 			if (forwardVector.magnitude > 1.0f) {
 				forwardVector.Normalize();
@@ -38,6 +40,7 @@ public class PlayerMotor : MonoBehaviour {
 			tf.rotation = Quaternion.LookRotation(forwardVector, GetComponent<GravityHandler>().Gravity);
 			rb.AddForce(tf.forward * vel * playerScale);
 		}
+		// To make sure the player doesn't spin around randomly because of stupid physics reasons
 		else {
 			tf.rotation = Quaternion.LookRotation(forwardVector, GetComponent<GravityHandler>().Gravity);
 		}
