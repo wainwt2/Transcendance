@@ -15,7 +15,7 @@ public class GravityHandler : MonoBehaviour {
 	public Vector3 gravRight;
 
 	public float GravityMagnitude = 9.8f;
-	public float TerminalVelocity = 5.0f;
+	public float TerminalVelocity = 100.0f;
 	
 	// Use this for initialization
 	void Start () {

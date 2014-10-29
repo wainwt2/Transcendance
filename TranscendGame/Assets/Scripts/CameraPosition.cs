@@ -6,9 +6,10 @@ using System.Collections;
 
 public class CameraPosition : MonoBehaviour {
 
-	Transform tf;
+	private Transform tf;
+	private MeshRenderer meshRender;
 
-	MeshRenderer meshRender;
+	public int camIndex;
 
 	public bool ShowNodes = false;
 
@@ -16,7 +17,6 @@ public class CameraPosition : MonoBehaviour {
 	void Start () {
 		tf = GetComponent<Transform>();
 		meshRender = GetComponent<MeshRenderer>();
-
 	}
 	
 	// Update is called once per frame
