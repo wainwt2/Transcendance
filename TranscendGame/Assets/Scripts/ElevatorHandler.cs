@@ -5,8 +5,8 @@ public class ElevatorHandler : MonoBehaviour {
 
 	public GameObject door1;
 	public GameObject door2;
-	public Vector3 door1Slide;
-	public Vector3 door2Slide;
+	private Vector3 door1Slide;
+	private Vector3 door2Slide;
 	private Transform door1tf;
 	private Transform door2tf;
 	private Transform tf;
@@ -19,6 +19,10 @@ public class ElevatorHandler : MonoBehaviour {
 		door1tf = door1.GetComponent<Transform>();
 		door2tf = door2.GetComponent<Transform>();
 		tf = GetComponent<Transform>();
+		door1Slide = new Vector3(1.0f, 0f, 0f);
+		door2Slide = new Vector3(2.0f, 0f, 0f);
+		door1Slide = tf.rotation * door1Slide;
+		door2Slide = tf.rotation * door2Slide;
 	}
 	
 	// Update is called once per frame
@@ -65,7 +69,8 @@ public class ElevatorHandler : MonoBehaviour {
 
 	IEnumerator MoveUpwards() {
 		while (true) {
-			tf.position += new Vector3(0f, upwardSpeed, 0f);
+			Vector3 dPos = tf.rotation * new Vector3(0f, upwardSpeed, 0f);
+			tf.position += dPos;
 			yield return new WaitForFixedUpdate();
 		}
 	}
