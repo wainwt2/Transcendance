@@ -40,6 +40,9 @@ public class CameraSystem : MonoBehaviour {
 		foreach (GameObject position in tempObjectList) {//add worldCameras to the CameraList
 			WorldCameraList.Add(position);
 		}
+		for (int i = 0; i < WorldCameraList.Count; ++i) {
+			WorldCameraList[i].GetComponent<CameraPosition>().camIndex = i;
+		}
 
 		AssignSelectedCam();	//initialize at the camera we want to use
 
@@ -54,10 +57,6 @@ public class CameraSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		Debug.Log (isMoving);
-		Debug.Log("Start: " + StartPos);
-		Debug.Log("End: " + EndPos);
 
 		if (StartPos == EndPos) {//check if we must move the camera
 			isMoving = false;

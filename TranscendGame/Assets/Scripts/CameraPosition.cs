@@ -10,6 +10,8 @@ public class CameraPosition : MonoBehaviour {
 
 	MeshRenderer meshRender;
 
+	public int camIndex;
+
 	public bool ShowNodes = false;
 
 	// Use this for initialization
