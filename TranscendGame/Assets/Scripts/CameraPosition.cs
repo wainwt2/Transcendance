@@ -9,6 +9,8 @@ public class CameraPosition : MonoBehaviour {
 	private Transform tf;
 	private MeshRenderer meshRender;
 
+	public int camIndex;
+
 	public bool ShowNodes = false;
 
 	// Use this for initialization
