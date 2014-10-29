@@ -116,7 +116,7 @@ public class CameraSystem : MonoBehaviour {
 		ViewCam.GetComponent<Transform>().rotation = TransRot;
 
 
-		if (fract >= 1.0f && UsingPlayerCam == false) {//Jerry-rigged fix
+		if (fract >= 1.0f) {//Jerry-rigged fix
 			StartPos = EndPos;
 			StartRot = EndRot;
 		}
