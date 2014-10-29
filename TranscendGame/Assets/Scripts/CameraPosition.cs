@@ -1,4 +1,4 @@
-﻿//Author: Dom Cristaldi
+//Author: Dom Cristaldi
 //Game: Transcendance
 
 using UnityEngine;
@@ -26,4 +26,5 @@ public class CameraPosition : MonoBehaviour {
 			meshRender.enabled = true;
 		}
 	}
+	
 }
