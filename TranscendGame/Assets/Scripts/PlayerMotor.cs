@@ -24,7 +24,7 @@ public class PlayerMotor : MonoBehaviour {
 	private Vector3 cameraRight;
 	private int stopTime;
 	private int cameraMoveTime = 100;
-	private bool movementBasedOnGravityVolumes = false;
+	public bool movementBasedOnGravityVolumes = false;
 
 	// Use this for initialization
 	void Start () {
