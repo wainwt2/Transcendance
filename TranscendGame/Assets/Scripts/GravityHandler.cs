@@ -34,12 +34,13 @@ public class GravityHandler : MonoBehaviour {
 		rigBody.AddForce(Gravity);
 
 		rigBody.velocity = Vector3.ClampMagnitude(rigBody.velocity, TerminalVelocity);
+		Debug.DrawRay(tf.position, Gravity, Color.black);
 	}
 
 	public void applyNewGravDirection(Vector3 gravDirection, Quaternion gravRotation) {
 		//rigBody.isKinematic = true;//stop all forces on object
 		//rigBody.velocity = new Vector3(0.0f, 0.0f, 0.0f);
-		rigBody.velocity = (gravRotation) * rigBody.velocity;
+		//rigBody.velocity = (gravRotation) * -tf.up * rigBody.velocity.magnitude;
 		Gravity = gravDirection;//set gravity
 		//rigidbody.isKinematic = false;//resume forces
 	}

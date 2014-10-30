@@ -24,7 +24,9 @@ public class PlayerMotor : MonoBehaviour {
 	private Vector3 cameraRight;
 	private int stopTime;
 	private int cameraMoveTime = 100;
-	private bool movementBasedOnGravityVolumes = false;
+	public bool movementBasedOnGravityVolumes = false;
+	public Transform nirvanaLockTf;
+	public bool nirvanaLocked = false;
 
 	// Use this for initialization
 	void Start () {
@@ -33,6 +35,7 @@ public class PlayerMotor : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 		forwardVector = tf.forward;
 		canMove = true;
+		nirvanaLocked = false;
 		stopTime = 0;
 		targetPos = tf.rotation * kiteString + tf.position;
 		targetRot = Quaternion.LookRotation(tf.rotation * -kiteString, -GetComponent<GravityHandler>().Gravity);
@@ -83,6 +86,9 @@ public class PlayerMotor : MonoBehaviour {
 		}
 		if (stopTime >= cameraMoveTime) {
 			lastAligned = tf.rotation;
+		}
+		if (!canMove && nirvanaLocked) {
+			tf.position = nirvanaLockTf.position;
 		}
 	}
 	
