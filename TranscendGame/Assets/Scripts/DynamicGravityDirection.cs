@@ -41,13 +41,13 @@ public class DynamicGravityDirection : MonoBehaviour {
 			other.gameObject.GetComponent<GravityHandler>().gravRight = tf.right;
 		}
 	}
-
+	/*
 	void SetGravity(GameObject gravBody) {
 		gravBody.GetComponent<GravityHandler>().applyNewGravDirection(GravDirection, tf.rotation);
 		gravBody.GetComponent<GravityHandler>().gravForward = tf.forward;
 		gravBody.GetComponent<GravityHandler>().gravRight = tf.right;
 	}
-	
+	*/
 	/*
 	void OnDrawGizmos() {
 		Gizmos.color = Color.red;

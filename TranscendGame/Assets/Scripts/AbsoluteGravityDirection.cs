@@ -29,7 +29,8 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 		                            GravScale * GravDirection.z);
 		
 		//Debug.Log(GravDirection);
-
+		Debug.DrawRay(tf.position, tf.up * -5, Color.black);
+		Debug.DrawRay(tf.position, tf.forward * 5, Color.green);
 
 	}
 	
@@ -46,7 +47,7 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 		}
 	}
 
-	void SetGravity(GameObject gravBody) {
+	public void SetGravity(GameObject gravBody) {
 		gravBody.GetComponent<GravityHandler>().applyNewGravDirection(GravDirection, tf.rotation);
 		gravBody.GetComponent<GravityHandler>().gravForward = tf.forward;
 		gravBody.GetComponent<GravityHandler>().gravRight = tf.right;

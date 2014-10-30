@@ -12,10 +12,12 @@ public class ElevatorHandler : MonoBehaviour {
 	private Transform tf;
 	public float upwardSpeed;
 	public static bool doorsUnlocked;
+	public static bool doorsOpen;
 
 	// Use this for initialization
 	void Start () {
 		doorsUnlocked = false;
+		doorsOpen = false;
 		door1tf = door1.GetComponent<Transform>();
 		door2tf = door2.GetComponent<Transform>();
 		tf = GetComponent<Transform>();
@@ -49,21 +51,27 @@ public class ElevatorHandler : MonoBehaviour {
 	}
 
 	IEnumerator OpenDoors(int frames) {
-		for (int i = 0; i < frames; i++) {
-			door1tf.position += (door1Slide/(float)frames);
-			door2tf.position += (door2Slide/(float)frames);
-			yield return new WaitForFixedUpdate();
+		if (!doorsOpen) {
+			doorsOpen = true;
+			for (int i = 0; i < frames; i++) {
+				door1tf.position += (door1Slide/(float)frames);
+				door2tf.position += (door2Slide/(float)frames);
+				yield return new WaitForFixedUpdate();
+			}
 		}
 	}
 
 	IEnumerator CloseDoors(int frames, bool moveUpwardOnFinish) {
-		for (int i = 0; i < frames; i++) {
-			door1tf.position -= (door1Slide/(float)frames);
-			door2tf.position -= (door2Slide/(float)frames);
-			yield return new WaitForFixedUpdate();
-		}
-		if (moveUpwardOnFinish) {
-			StartCoroutine(MoveUpwards());
+		if (doorsOpen) {
+			doorsOpen = false;
+			for (int i = 0; i < frames; i++) {
+				door1tf.position -= (door1Slide/(float)frames);
+				door2tf.position -= (door2Slide/(float)frames);
+				yield return new WaitForFixedUpdate();
+			}
+			if (moveUpwardOnFinish) {
+				StartCoroutine(MoveUpwards());
+			}
 		}
 	}
 
