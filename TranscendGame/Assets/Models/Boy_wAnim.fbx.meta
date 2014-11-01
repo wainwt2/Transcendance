@@ -1,0 +1,2137 @@
+fileFormatVersion: 2
+guid: da6ff4088806f4c40b3ec6b023012d67
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: BoyGEO
+    100006: Chest
+    100008: Chest_CTRL
+    100010: CTRL
+    100012: GEO
+    100014: Head
+    100016: Head_CTRL
+    100018: HeadTip
+    100020: Hips
+    100022: Hips_ROT_CTRL
+    100024: HipTranslate_CTRL
+    100026: IK
+    100028: IK_CTRL
+    100030: L_Ankle
+    100032: L_Ankle_IK_GRP
+    100034: L_AnkleIK
+    100036: L_AnkleIK1
+    100038: L_Arm_CTRL_GRP
+    100040: L_Ball
+    100042: L_BallIK
+    100044: L_BallIK1
+    100046: L_Calf
+    100048: L_Fingers_CTRL_GRP
+    100050: L_FingerTip
+    100052: L_Foot_CTRL
+    100054: L_Hand_CTRL_GRP
+    100056: L_heelPivot_GRP
+    100058: L_HiDigit_CTRL
+    100060: L_HiFinger
+    100062: L_HiThumb_CTRL
+    100064: L_Legs_PV
+    100066: L_LoArm
+    100068: L_LoArm_CTRL
+    100070: L_LoDigit_CTRL
+    100072: L_LoFinger
+    100074: L_LoThumb_CTRL
+    100076: L_MidDigit_CTRL
+    100078: L_MidFinger
+    100080: L_Palm
+    100082: L_PeelHeel_GRP
+    100084: L_peelHeel_GRP
+    100086: L_PV_CTRL
+    100088: L_Shoulder
+    100090: L_Shoulder_CTRL
+    100092: L_Thigh
+    100094: L_ThumbBase
+    100096: L_ThumbTip
+    100098: L_ThumbTop
+    100100: L_TipToe_GRP
+    100102: L_tipToe_GRP
+    100104: L_ToeIK
+    100106: L_ToeIK1
+    100108: L_ToeTap_GRP
+    100110: L_toeTap_GRP
+    100112: L_ToeTip
+    100114: L_UpArm
+    100116: L_UpArm_CTRL
+    100118: L_Wrist_CTRL
+    100120: Master_CTRL
+    100122: Neck
+    100124: Neck_CTRL
+    100126: PV_CTRL
+    100128: PV_RIG
+    100130: R_Ankle
+    100132: R_Ankle_IK_GRP
+    100134: R_AnkleIK
+    100136: R_AnkleIK1
+    100138: R_Arm_CTRL_GRP
+    100140: R_Ball
+    100142: R_BallIK
+    100144: R_BallIK1
+    100146: R_Calf
+    100148: R_Fingers_CTRL_GRP
+    100150: R_FingerTip
+    100152: R_Foot_CTRL
+    100154: R_Hand_CTRL_GRP
+    100156: R_heelPivot_GRP
+    100158: R_HiDigit_CTRL
+    100160: R_HiFinger
+    100162: R_HiThumb_CTRL
+    100164: R_Legs_PV
+    100166: R_LoArm
+    100168: R_LoArm_CTRL
+    100170: R_LoDigit_CTRL
+    100172: R_LoFinger
+    100174: R_LoThumb_CTRL
+    100176: R_MidDigit_CTRL
+    100178: R_MidFinger
+    100180: R_Palm
+    100182: R_PeelHeel_GRP
+    100184: R_peelHeel_GRP
+    100186: R_PV_CTRL
+    100188: R_Shoulder
+    100190: R_Shoulder_CTRL
+    100192: R_Thigh
+    100194: R_ThumbBase
+    100196: R_ThumbTip
+    100198: R_ThumbTop
+    100200: R_TipToe_GRP
+    100202: R_tipToe_GRP
+    100204: R_ToeIK
+    100206: R_ToeIK1
+    100208: R_ToeTap_GRP
+    100210: R_toeTap_GRP
+    100212: R_ToeTip
+    100214: R_UpArm
+    100216: R_UpArm_CTRL
+    100218: R_Wrist_CTRL
+    100220: SKELE
+    100222: Spine
+    100224: Spine_CTRL
+    400000: Armature
+    400002: //RootNode
+    400004: BoyGEO
+    400006: Chest
+    400008: Chest_CTRL
+    400010: CTRL
+    400012: GEO
+    400014: Head
+    400016: Head_CTRL
+    400018: HeadTip
+    400020: Hips
+    400022: Hips_ROT_CTRL
+    400024: HipTranslate_CTRL
+    400026: IK
+    400028: IK_CTRL
+    400030: L_Ankle
+    400032: L_Ankle_IK_GRP
+    400034: L_AnkleIK
+    400036: L_AnkleIK1
+    400038: L_Arm_CTRL_GRP
+    400040: L_Ball
+    400042: L_BallIK
+    400044: L_BallIK1
+    400046: L_Calf
+    400048: L_Fingers_CTRL_GRP
+    400050: L_FingerTip
+    400052: L_Foot_CTRL
+    400054: L_Hand_CTRL_GRP
+    400056: L_heelPivot_GRP
+    400058: L_HiDigit_CTRL
+    400060: L_HiFinger
+    400062: L_HiThumb_CTRL
+    400064: L_Legs_PV
+    400066: L_LoArm
+    400068: L_LoArm_CTRL
+    400070: L_LoDigit_CTRL
+    400072: L_LoFinger
+    400074: L_LoThumb_CTRL
+    400076: L_MidDigit_CTRL
+    400078: L_MidFinger
+    400080: L_Palm
+    400082: L_PeelHeel_GRP
+    400084: L_peelHeel_GRP
+    400086: L_PV_CTRL
+    400088: L_Shoulder
+    400090: L_Shoulder_CTRL
+    400092: L_Thigh
+    400094: L_ThumbBase
+    400096: L_ThumbTip
+    400098: L_ThumbTop
+    400100: L_TipToe_GRP
+    400102: L_tipToe_GRP
+    400104: L_ToeIK
+    400106: L_ToeIK1
+    400108: L_ToeTap_GRP
+    400110: L_toeTap_GRP
+    400112: L_ToeTip
+    400114: L_UpArm
+    400116: L_UpArm_CTRL
+    400118: L_Wrist_CTRL
+    400120: Master_CTRL
+    400122: Neck
+    400124: Neck_CTRL
+    400126: PV_CTRL
+    400128: PV_RIG
+    400130: R_Ankle
+    400132: R_Ankle_IK_GRP
+    400134: R_AnkleIK
+    400136: R_AnkleIK1
+    400138: R_Arm_CTRL_GRP
+    400140: R_Ball
+    400142: R_BallIK
+    400144: R_BallIK1
+    400146: R_Calf
+    400148: R_Fingers_CTRL_GRP
+    400150: R_FingerTip
+    400152: R_Foot_CTRL
+    400154: R_Hand_CTRL_GRP
+    400156: R_heelPivot_GRP
+    400158: R_HiDigit_CTRL
+    400160: R_HiFinger
+    400162: R_HiThumb_CTRL
+    400164: R_Legs_PV
+    400166: R_LoArm
+    400168: R_LoArm_CTRL
+    400170: R_LoDigit_CTRL
+    400172: R_LoFinger
+    400174: R_LoThumb_CTRL
+    400176: R_MidDigit_CTRL
+    400178: R_MidFinger
+    400180: R_Palm
+    400182: R_PeelHeel_GRP
+    400184: R_peelHeel_GRP
+    400186: R_PV_CTRL
+    400188: R_Shoulder
+    400190: R_Shoulder_CTRL
+    400192: R_Thigh
+    400194: R_ThumbBase
+    400196: R_ThumbTip
+    400198: R_ThumbTop
+    400200: R_TipToe_GRP
+    400202: R_tipToe_GRP
+    400204: R_ToeIK
+    400206: R_ToeIK1
+    400208: R_ToeTap_GRP
+    400210: R_toeTap_GRP
+    400212: R_ToeTip
+    400214: R_UpArm
+    400216: R_UpArm_CTRL
+    400218: R_Wrist_CTRL
+    400220: SKELE
+    400222: Spine
+    400224: Spine_CTRL
+    4300000: BoyGEO
+    7400000: Running
+    7400002: Idle
+    7400004: PickUp
+    7400006: BoxWalk
+    9500000: //RootNode
+    13700000: BoyGEO
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Running
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Hips_ROT_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Spine_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Spine_CTRL/Chest_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/IK_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/IK_CTRL/L_Foot_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/IK_CTRL/R_Foot_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL/L_MidDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL/L_MidDigit_CTRL/L_HiDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoThumb_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoThumb_CTRL/L_HiThumb_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL/L_UpArm_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL/L_UpArm_CTRL/L_LoArm_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/Neck_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/Neck_CTRL/Head_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/PV_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/PV_CTRL/L_PV_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/PV_CTRL/R_PV_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL/R_MidDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL/R_MidDigit_CTRL/R_HiDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoThumb_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoThumb_CTRL/R_HiThumb_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL/R_UpArm_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL/R_UpArm_CTRL/R_LoArm_CTRL
+        weight: 1
+      - path: GEO
+        weight: 1
+      - path: GEO/BoyGEO
+        weight: 1
+      - path: SKELE
+        weight: 1
+      - path: SKELE/Armature
+        weight: 1
+      - path: SKELE/Armature/Hips
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle/L_Ball
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle/L_Ball/L_ToeTip
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle/R_Ball
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle/R_Ball/R_ToeTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger/L_HiFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger/L_HiFinger/L_FingerTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase/L_ThumbTop
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase/L_ThumbTop/L_ThumbTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck/Head/HeadTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger/R_HiFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger/R_HiFinger/R_FingerTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase/R_ThumbTop
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase/R_ThumbTop/R_ThumbTip
+        weight: 1
+      - path: SKELE/IK
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_PeelHeel_GRP
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_PeelHeel_GRP/L_AnkleIK
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP/L_BallIK
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP/L_ToeIK
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_peelHeel_GRP
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_peelHeel_GRP/L_AnkleIK1
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP/L_BallIK1
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP/L_ToeIK1
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_PeelHeel_GRP
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_PeelHeel_GRP/R_AnkleIK
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP/R_BallIK
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP/R_ToeIK
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_peelHeel_GRP
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_peelHeel_GRP/R_AnkleIK1
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP/R_BallIK1
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP/R_ToeIK1
+        weight: 1
+      - path: SKELE/PV_RIG
+        weight: 1
+      - path: SKELE/PV_RIG/L_Legs_PV
+        weight: 1
+      - path: SKELE/PV_RIG/R_Legs_PV
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 28
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Hips_ROT_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Spine_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Spine_CTRL/Chest_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/IK_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/IK_CTRL/L_Foot_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/IK_CTRL/R_Foot_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL/L_MidDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL/L_MidDigit_CTRL/L_HiDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoThumb_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoThumb_CTRL/L_HiThumb_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL/L_UpArm_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL/L_UpArm_CTRL/L_LoArm_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/Neck_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/Neck_CTRL/Head_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/PV_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/PV_CTRL/L_PV_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/PV_CTRL/R_PV_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL/R_MidDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL/R_MidDigit_CTRL/R_HiDigit_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoThumb_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoThumb_CTRL/R_HiThumb_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL/R_UpArm_CTRL
+        weight: 1
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL/R_UpArm_CTRL/R_LoArm_CTRL
+        weight: 1
+      - path: GEO
+        weight: 1
+      - path: GEO/BoyGEO
+        weight: 1
+      - path: SKELE
+        weight: 1
+      - path: SKELE/Armature
+        weight: 1
+      - path: SKELE/Armature/Hips
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle/L_Ball
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle/L_Ball/L_ToeTip
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle/R_Ball
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle/R_Ball/R_ToeTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger/L_HiFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger/L_HiFinger/L_FingerTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase/L_ThumbTop
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase/L_ThumbTop/L_ThumbTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck/Head/HeadTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger/R_HiFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger/R_HiFinger/R_FingerTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase/R_ThumbTop
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase/R_ThumbTop/R_ThumbTip
+        weight: 1
+      - path: SKELE/IK
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_PeelHeel_GRP
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_PeelHeel_GRP/L_AnkleIK
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP/L_BallIK
+        weight: 1
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP/L_ToeIK
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_peelHeel_GRP
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_peelHeel_GRP/L_AnkleIK1
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP/L_BallIK1
+        weight: 1
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP/L_ToeIK1
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_PeelHeel_GRP
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_PeelHeel_GRP/R_AnkleIK
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP/R_BallIK
+        weight: 1
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP/R_ToeIK
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_peelHeel_GRP
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_peelHeel_GRP/R_AnkleIK1
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP/R_BallIK1
+        weight: 1
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP/R_ToeIK1
+        weight: 1
+      - path: SKELE/PV_RIG
+        weight: 1
+      - path: SKELE/PV_RIG/L_Legs_PV
+        weight: 1
+      - path: SKELE/PV_RIG/R_Legs_PV
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: PickUp
+      takeName: Take 001
+      firstFrame: 118
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Hips_ROT_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Spine_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Spine_CTRL/Chest_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/IK_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/IK_CTRL/L_Foot_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/IK_CTRL/R_Foot_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL/L_MidDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL/L_MidDigit_CTRL/L_HiDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoThumb_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoThumb_CTRL/L_HiThumb_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL/L_UpArm_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL/L_UpArm_CTRL/L_LoArm_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/Neck_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/Neck_CTRL/Head_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/PV_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/PV_CTRL/L_PV_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/PV_CTRL/R_PV_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL/R_MidDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL/R_MidDigit_CTRL/R_HiDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoThumb_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoThumb_CTRL/R_HiThumb_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL/R_UpArm_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL/R_UpArm_CTRL/R_LoArm_CTRL
+        weight: 0
+      - path: GEO
+        weight: 0
+      - path: GEO/BoyGEO
+        weight: 0
+      - path: SKELE
+        weight: 1
+      - path: SKELE/Armature
+        weight: 1
+      - path: SKELE/Armature/Hips
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle/L_Ball
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle/L_Ball/L_ToeTip
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle/R_Ball
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle/R_Ball/R_ToeTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger/L_HiFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger/L_HiFinger/L_FingerTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase/L_ThumbTop
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase/L_ThumbTop/L_ThumbTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck/Head/HeadTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger/R_HiFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger/R_HiFinger/R_FingerTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase/R_ThumbTop
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase/R_ThumbTop/R_ThumbTip
+        weight: 1
+      - path: SKELE/IK
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_PeelHeel_GRP
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_PeelHeel_GRP/L_AnkleIK
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP/L_BallIK
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP/L_ToeIK
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_peelHeel_GRP
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_peelHeel_GRP/L_AnkleIK1
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP/L_BallIK1
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP/L_ToeIK1
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_PeelHeel_GRP
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_PeelHeel_GRP/R_AnkleIK
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP/R_BallIK
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP/R_ToeIK
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_peelHeel_GRP
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_peelHeel_GRP/R_AnkleIK1
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP/R_BallIK1
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP/R_ToeIK1
+        weight: 0
+      - path: SKELE/PV_RIG
+        weight: 0
+      - path: SKELE/PV_RIG/L_Legs_PV
+        weight: 0
+      - path: SKELE/PV_RIG/R_Legs_PV
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: BoxWalk
+      takeName: Take 001
+      firstFrame: 154
+      lastFrame: 177
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Hips_ROT_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Spine_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/HipTranslate_CTRL/Spine_CTRL/Chest_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/IK_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/IK_CTRL/L_Foot_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/IK_CTRL/R_Foot_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL/L_MidDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoDigit_CTRL/L_MidDigit_CTRL/L_HiDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoThumb_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Hand_CTRL_GRP/L_Wrist_CTRL/L_Fingers_CTRL_GRP/L_LoThumb_CTRL/L_HiThumb_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL/L_UpArm_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/L_Arm_CTRL_GRP/L_Shoulder_CTRL/L_UpArm_CTRL/L_LoArm_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/Neck_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/Neck_CTRL/Head_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/PV_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/PV_CTRL/L_PV_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/PV_CTRL/R_PV_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL/R_MidDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoDigit_CTRL/R_MidDigit_CTRL/R_HiDigit_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoThumb_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Hand_CTRL_GRP/R_Wrist_CTRL/R_Fingers_CTRL_GRP/R_LoThumb_CTRL/R_HiThumb_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL/R_UpArm_CTRL
+        weight: 0
+      - path: CTRL/Master_CTRL/R_Arm_CTRL_GRP/R_Shoulder_CTRL/R_UpArm_CTRL/R_LoArm_CTRL
+        weight: 0
+      - path: GEO
+        weight: 0
+      - path: GEO/BoyGEO
+        weight: 0
+      - path: SKELE
+        weight: 1
+      - path: SKELE/Armature
+        weight: 1
+      - path: SKELE/Armature/Hips
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle/L_Ball
+        weight: 1
+      - path: SKELE/Armature/Hips/L_Thigh/L_Calf/L_Ankle/L_Ball/L_ToeTip
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle/R_Ball
+        weight: 1
+      - path: SKELE/Armature/Hips/R_Thigh/R_Calf/R_Ankle/R_Ball/R_ToeTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger/L_HiFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_LoFinger/L_MidFinger/L_HiFinger/L_FingerTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase/L_ThumbTop
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/L_Shoulder/L_UpArm/L_LoArm/L_Palm/L_ThumbBase/L_ThumbTop/L_ThumbTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/Neck/Head/HeadTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger/R_HiFinger
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_LoFinger/R_MidFinger/R_HiFinger/R_FingerTip
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase/R_ThumbTop
+        weight: 1
+      - path: SKELE/Armature/Hips/Spine/Chest/R_Shoulder/R_UpArm/R_LoArm/R_Palm/R_ThumbBase/R_ThumbTop/R_ThumbTip
+        weight: 1
+      - path: SKELE/IK
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_PeelHeel_GRP
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_PeelHeel_GRP/L_AnkleIK
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP/L_BallIK
+        weight: 0
+      - path: SKELE/IK/L_Ankle_IK_GRP/L_TipToe_GRP/L_ToeTap_GRP/L_ToeIK
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_peelHeel_GRP
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_peelHeel_GRP/L_AnkleIK1
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP/L_BallIK1
+        weight: 0
+      - path: SKELE/IK/L_heelPivot_GRP/L_tipToe_GRP/L_toeTap_GRP/L_ToeIK1
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_PeelHeel_GRP
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_PeelHeel_GRP/R_AnkleIK
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP/R_BallIK
+        weight: 0
+      - path: SKELE/IK/R_Ankle_IK_GRP/R_TipToe_GRP/R_ToeTap_GRP/R_ToeIK
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_peelHeel_GRP
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_peelHeel_GRP/R_AnkleIK1
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP/R_BallIK1
+        weight: 0
+      - path: SKELE/IK/R_heelPivot_GRP/R_tipToe_GRP/R_toeTap_GRP/R_ToeIK1
+        weight: 0
+      - path: SKELE/PV_RIG
+        weight: 0
+      - path: SKELE/PV_RIG/L_Legs_PV
+        weight: 0
+      - path: SKELE/PV_RIG/R_Legs_PV
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ankle
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ankle
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Chest
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Shoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Shoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_UpArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_UpArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_LoArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_LoArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Palm
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Palm
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_ToeTip
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_ToeTip
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: HeadTip
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_ThumbBase
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_ThumbTop
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_ThumbTip
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_MidFinger
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_HiFinger
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_FingerTip
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_ThumbBase
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_ThumbTop
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_ThumbTip
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_MidFinger
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_HiFinger
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_FingerTip
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Boy_wAnim(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: CTRL
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Master_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: HipTranslate_CTRL
+      position: {x: .00209201034, y: .419108719, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hips_ROT_CTRL
+      position: {x: -0, y: -.00166625611, z: .00540585723}
+      rotation: {x: 3.57214475e-07, y: -3.72573777e-05, z: .00958731025, w: .999954045}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine_CTRL
+      position: {x: -0, y: .03909171, z: .00614168029}
+      rotation: {x: -.0188026372, y: 2.59157296e-05, z: 1.40637383e-06, w: .999823213}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Chest_CTRL
+      position: {x: -0, y: .12916109, z: -.000278784108}
+      rotation: {x: -.0728238821, y: 4.50801878e-07, z: -5.57512658e-06, w: .997344851}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IK_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Foot_CTRL
+      position: {x: .0390683785, y: 1.92907864e-05, z: -.0257651489}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Foot_CTRL
+      position: {x: -.0389921367, y: 0, z: -.0258339457}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Arm_CTRL_GRP
+      position: {x: .0582351424, y: .642672658, z: -.00999170542}
+      rotation: {x: -.0915637091, y: 2.60903962e-05, z: -2.29269335e-06, w: .995799243}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Hand_CTRL_GRP
+      position: {x: .0722154006, y: -.283050746, z: -.0534828231}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Wrist_CTRL
+      position: {x: 5.55111512e-17, y: -5.55111512e-17, z: 2.28983499e-16}
+      rotation: {x: .0087585533, y: .121335857, z: -.343499154, w: .931240678}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Fingers_CTRL_GRP
+      position: {x: -.295578957, y: -.434059024, z: -.0136810252}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_LoDigit_CTRL
+      position: {x: .3158288, y: .413564384, z: .0136810252}
+      rotation: {x: 0, y: -0, z: -.000179934752, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_MidDigit_CTRL
+      position: {x: .013045569, y: -.0165335238, z: -1.73472348e-17}
+      rotation: {x: 0, y: -0, z: -.134870648, w: .990863204}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_HiDigit_CTRL
+      position: {x: .0114245452, y: -.0166987535, z: 3.81639165e-17}
+      rotation: {x: 0, y: -0, z: -.0954137594, w: .995437741}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_LoThumb_CTRL
+      position: {x: .297813535, y: .420216531, z: -.00851249043}
+      rotation: {x: -.00107313308, y: -.105410114, z: .220648438, w: .969640076}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_HiThumb_CTRL
+      position: {x: .00167081016, y: -.0149502158, z: -.00419790577}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Shoulder_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -.000822672271, y: .0232634339, z: -.035743501, w: .999089897}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_UpArm_CTRL
+      position: {x: .0512513071, y: -.00307507836, z: -4.85722573e-17}
+      rotation: {x: .0941661075, y: .0438393764, z: -.282009244, w: .953772306}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_LoArm_CTRL
+      position: {x: .0931856707, y: -.101749435, z: .0244980361}
+      rotation: {x: .000646664819, y: .000326452049, z: .000478793343, w: .999999642}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Neck_CTRL
+      position: {x: .00209117914, y: .681933165, z: -.022514971}
+      rotation: {x: -.0528089404, y: -7.35805042e-06, z: -2.81523771e-05, w: .998604655}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Head_CTRL
+      position: {x: 2.24298163e-17, y: .0223098882, z: .00909466017}
+      rotation: {x: .00260429969, y: -.0400219932, z: -.00166539813, w: .999194026}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PV_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_PV_CTRL
+      position: {x: .0436583087, y: .216671899, z: -.251810014}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_PV_CTRL
+      position: {x: -.0441046767, y: .216671899, z: -.251810014}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Arm_CTRL_GRP
+      position: {x: -.0540522411, y: .642674029, z: -.00998598244}
+      rotation: {x: -.0915637091, y: 2.60903962e-05, z: -2.29269335e-06, w: .995799243}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Hand_CTRL_GRP
+      position: {x: -.0674912408, y: -.277534246, z: -.0646033734}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Wrist_CTRL
+      position: {x: 4.27381472e-08, y: 3.1631938e-08, z: 2.49695056e-08}
+      rotation: {x: .0317397304, y: -.207793742, z: .252913237, w: .94437772}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Fingers_CTRL_GRP
+      position: {x: .295578957, y: -.434059024, z: -.0136810252}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_LoDigit_CTRL
+      position: {x: -.3158288, y: .413564384, z: .0136810252}
+      rotation: {x: -5.90004947e-06, y: -3.41199484e-06, z: .000159062169, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_MidDigit_CTRL
+      position: {x: -.013045569, y: -.0165335238, z: -1.73472348e-17}
+      rotation: {x: -2.58184696e-06, y: -2.26745601e-06, z: .104447126, w: .994530439}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_HiDigit_CTRL
+      position: {x: -.0114245452, y: -.0166987535, z: 3.81639165e-17}
+      rotation: {x: -7.91805905e-06, y: -4.97491646e-06, z: .106555931, w: .994306743}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_LoThumb_CTRL
+      position: {x: -.297813535, y: .420216531, z: -.00851249043}
+      rotation: {x: -.0654921979, y: .170476764, z: -.170846656, w: .968225121}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_HiThumb_CTRL
+      position: {x: -.00167081016, y: -.0149502158, z: -.00419790577}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Shoulder_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 5.90875861e-05, y: -.0261426792, z: 7.60072799e-05, w: .999658227}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_UpArm_CTRL
+      position: {x: -.0512512885, y: -.00307541783, z: 3.23586002e-09}
+      rotation: {x: .115734287, y: -.0434116758, z: .322263509, w: .938545287}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_LoArm_CTRL
+      position: {x: -.0931856707, y: -.101749435, z: .0244980361}
+      rotation: {x: .000482297561, y: -.000385372812, z: -.00016402753, w: .999999821}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: GEO
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BoyGEO
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: SKELE
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hips
+      position: {x: -3.7252903e-09, y: .408855408, z: .00540585723}
+      rotation: {x: .416807443, y: -.571201861, z: -.416807443, w: .571201861}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Spine
+      position: {x: -.0619256906, y: .00693217758, z: -.000709461921}
+      rotation: {x: -2.48436596e-08, y: 3.4046284e-08, z: -.0944059491, w: .995533824}
+      scale: {x: .999999881, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: Chest
+      position: {x: -.129375771, y: -.000188594902, z: .00115648948}
+      rotation: {x: .980142534, y: -.19829452, z: 2.53806434e-08, w: -3.36478791e-08}
+      scale: {x: .999999881, y: .999999762, z: .999999642}
+      transformModified: 1
+    - name: Neck
+      position: {x: -.101584956, y: .00394633645, z: .000277973188}
+      rotation: {x: -.985040486, y: .172323585, z: 0, w: 0}
+      scale: {x: 1.00000012, y: .999999702, z: .999999762}
+      transformModified: 1
+    - name: Head
+      position: {x: -.0310960673, y: .000953958253, z: -.00112490088}
+      rotation: {x: 0, y: 0, z: -.0211171415, w: .999777079}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: HeadTip
+      position: {x: -.365663469, y: 7.12971349e-16, z: 2.60069687e-17}
+      rotation: {x: .493498713, y: -.506417871, z: .493498713, w: .506417871}
+      scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: L_Shoulder
+      position: {x: -.0720490292, y: -.00632058643, z: -.0558657087}
+      rotation: {x: .100970849, y: .720937669, z: .0950941816, w: -.678977907}
+      scale: {x: 1, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: L_UpArm
+      position: {x: -.0513434783, y: -6.40335335e-17, z: -9.60114691e-17}
+      rotation: {x: .0385856032, y: .0078293914, z: -.00558329932, w: .999209046}
+      scale: {x: .999999762, y: .999999881, z: .999999702}
+      transformModified: 1
+    - name: L_LoArm
+      position: {x: -.140130907, y: 1.28369537e-16, z: -1.0979918e-16}
+      rotation: {x: -.00210137293, y: .0141217513, z: .0391199589, w: .999132514}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: L_Palm
+      position: {x: -.144643843, y: 4.0440741e-17, z: 1.30576109e-17}
+      rotation: {x: .00158926297, y: .0286943335, z: -.0552792922, w: .998057246}
+      scale: {x: 1.00000024, y: 1.0000006, z: 1.00000036}
+      transformModified: 1
+    - name: L_LoFinger
+      position: {x: -.0288112294, y: -3.52926932e-17, z: -9.14269099e-17}
+      rotation: {x: 0, y: -.0556559153, z: 0, w: .998449981}
+      scale: {x: .999999762, y: .999999404, z: .999999404}
+      transformModified: 1
+    - name: L_MidFinger
+      position: {x: -.021060491, y: -1.47731281e-15, z: -2.9468615e-16}
+      rotation: {x: -9.83190684e-09, y: -.0339972712, z: -1.8639275e-08, w: .999422014}
+      scale: {x: .999999881, y: 1.00000012, z: 1.00000036}
+      transformModified: 1
+    - name: L_HiFinger
+      position: {x: -.02023286, y: -3.26574146e-15, z: -1.19262239e-16}
+      rotation: {x: 4.75781334e-08, y: -.0413811468, z: 1.81455189e-08, w: .999143481}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: L_FingerTip
+      position: {x: -.0169779956, y: 5.23362261e-18, z: -5.38151497e-17}
+      rotation: {x: -.134209916, y: -.958266556, z: -.0350101404, w: -.249974445}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_ThumbBase
+      position: {x: -.0114173274, y: -.0221935157, z: -.00813957676}
+      rotation: {x: -.145998701, y: -.107288614, z: .336488366, w: .924093664}
+      scale: {x: .999999702, y: .999999821, z: .999999642}
+      transformModified: 1
+    - name: L_ThumbTop
+      position: {x: -.0156180337, y: -1.47451495e-16, z: 2.93247597e-16}
+      rotation: {x: .0503256507, y: .0300106574, z: -.00829396397, w: .998247445}
+      scale: {x: 1.00000012, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: L_ThumbTip
+      position: {x: -.0133291408, y: 1.18923426e-18, z: 7.57857319e-17}
+      rotation: {x: .00178664562, y: .0259353966, z: -.0696732551, w: .997231066}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: R_Shoulder
+      position: {x: -.072049357, y: -.00632049609, z: .0564216748}
+      rotation: {x: -.678978443, y: .0950942561, z: .720937133, w: .100970775}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: R_UpArm
+      position: {x: -.0513434634, y: -6.84730929e-18, z: -6.18226055e-17}
+      rotation: {x: -.038585607, y: .00782829523, z: .00558326114, w: .999209046}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: R_LoArm
+      position: {x: -.140131637, y: -1.70747549e-09, z: 1.46624004e-07}
+      rotation: {x: .00210163975, y: .0141221257, z: -.0391188674, w: .999132633}
+      scale: {x: 1.00000012, y: .999999821, z: 1}
+      transformModified: 1
+    - name: R_Palm
+      position: {x: -.144643947, y: 3.32258765e-07, z: -4.10428029e-08}
+      rotation: {x: -.00158919999, y: .0286925435, z: .055279579, w: .998057365}
+      scale: {x: 1, y: 1.00000012, z: .999999881}
+      transformModified: 1
+    - name: R_LoFinger
+      position: {x: -.0288115889, y: 3.2897769e-09, z: -1.3577643e-08}
+      rotation: {x: -3.88899437e-08, y: -.0556564629, z: 1.62458953e-08, w: .998450041}
+      scale: {x: .999999881, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: R_MidFinger
+      position: {x: -.0210597273, y: -1.32830835e-09, z: -1.57971513e-07}
+      rotation: {x: 3.72786602e-08, y: -.033988636, z: -1.96635952e-08, w: .999422193}
+      scale: {x: 1, y: .999999881, z: 1.00000012}
+      transformModified: 1
+    - name: R_HiFinger
+      position: {x: -.0202332735, y: -1.32863842e-09, z: 5.62514231e-08}
+      rotation: {x: -1.2378031e-08, y: -.0413796082, z: 2.8738171e-08, w: .999143541}
+      scale: {x: 1, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: R_FingerTip
+      position: {x: -.0169772916, y: 2.49866884e-15, z: 6.70720922e-17}
+      rotation: {x: -.0350096934, y: -.24997136, z: .13421005, w: .958267391}
+      scale: {x: .999999821, y: .999999821, z: .999999583}
+      transformModified: 1
+    - name: R_ThumbBase
+      position: {x: -.0114173032, y: .0221934933, z: -.00813889783}
+      rotation: {x: .146012351, y: -.107293606, z: -.336489022, w: .924090743}
+      scale: {x: .99999994, y: 1.00000012, z: .999999881}
+      transformModified: 1
+    - name: R_ThumbTop
+      position: {x: -.0156186018, y: 2.16655867e-08, z: -6.69234268e-08}
+      rotation: {x: -.0503324158, y: .0300071463, z: .00829097815, w: .998247206}
+      scale: {x: 1.00000012, y: .99999994, z: 1.00000048}
+      transformModified: 1
+    - name: R_ThumbTip
+      position: {x: -.0133287823, y: -3.78703178e-18, z: 2.58185436e-17}
+      rotation: {x: .0696743578, y: -.997231185, z: .00178609497, w: .0259282496}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: L_Thigh
+      position: {x: .0146535281, y: -.00469439523, z: .0439479947}
+      rotation: {x: -.040413212, y: -.999107659, z: -.00453189574, w: -.0114095826}
+      scale: {x: .999999821, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: L_Calf
+      position: {x: -.170596361, y: -1.38777878e-17, z: -1.38777878e-17}
+      rotation: {x: .983015001, y: .183525473, z: -6.19868601e-10, w: -4.32297309e-09}
+      scale: {x: .99999994, y: .999999762, z: 1.00000012}
+      transformModified: 1
+    - name: L_Ankle
+      position: {x: -.204553604, y: 2.42861287e-17, z: -6.9388939e-18}
+      rotation: {x: -.74304384, y: -.669130266, z: -.0122584077, w: .000669426634}
+      scale: {x: .999999583, y: .999999821, z: .999999642}
+      transformModified: 1
+    - name: L_Ball
+      position: {x: -.050355345, y: -3.46944695e-18, z: -1.38777878e-17}
+      rotation: {x: -7.10163839e-09, y: -4.15911821e-08, z: -.106585652, w: .994303524}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: L_ToeTip
+      position: {x: -.0387079492, y: 2.34187669e-17, z: -3.46944695e-17}
+      rotation: {x: .657404959, y: .753537476, z: -2.28362662e-08, w: 5.70531755e-09}
+      scale: {x: 1.00000024, y: 1.00000036, z: 1.00000024}
+      transformModified: 1
+    - name: R_Thigh
+      position: {x: .0146536957, y: -.00469444366, z: -.0439479984}
+      rotation: {x: -.0404104292, y: -.999105871, z: -.00478746276, w: -.0114725959}
+      scale: {x: .99999994, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: R_Calf
+      position: {x: -.170596272, y: 1.15125754e-16, z: -1.39531258e-17}
+      rotation: {x: .983015001, y: .183525652, z: 4.24683968e-08, w: 6.29069508e-09}
+      scale: {x: .999999821, y: .99999994, z: .999999821}
+      transformModified: 1
+    - name: R_Ankle
+      position: {x: -.204553485, y: 5.30941096e-18, z: 1.38777853e-17}
+      rotation: {x: -.743044198, y: -.669126987, z: -.0123994397, w: .000891690201}
+      scale: {x: .999999762, y: .99999994, z: .999999642}
+      transformModified: 1
+    - name: R_Ball
+      position: {x: -.0503553972, y: 2.79721348e-17, z: 1.38777895e-17}
+      rotation: {x: -8.37019609e-09, y: -4.08695335e-08, z: -.106585667, w: .994303524}
+      scale: {x: .999999881, y: .99999994, z: 1}
+      transformModified: 1
+    - name: R_ToeTip
+      position: {x: -.038707871, y: 1.84422234e-17, z: 6.9388939e-18}
+      rotation: {x: .753537416, y: -.657405019, z: 6.13051032e-09, w: 2.33391546e-08}
+      scale: {x: .99999994, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: IK
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Ankle_IK_GRP
+      position: {x: .0439479947, y: .0149871651, z: .0107751805}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_TipToe_GRP
+      position: {x: 4.85722573e-17, y: -.0133910803, z: -.0875464231}
+      rotation: {x: -.000526711636, y: 0, z: -0, w: .999999881}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_PeelHeel_GRP
+      position: {x: -3.46944695e-17, y: .0011988628, z: .0386893786}
+      rotation: {x: -8.27689728e-05, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_AnkleIK
+      position: {x: -2.7220759e-10, y: .0121922381, z: .0488570407}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_ToeTap_GRP
+      position: {x: -3.46944695e-17, y: .0011988628, z: .0386893786}
+      rotation: {x: -.000188111764, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_BallIK
+      position: {x: -3.46944695e-17, y: 1.10778264e-09, z: 4.44311921e-09}
+      rotation: {x: -.0861737952, y: -.701836228, z: .0861737952, w: .701836228}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_ToeIK
+      position: {x: 2.33938091e-10, y: -.00119072525, z: -.0386896245}
+      rotation: {x: -.0108772283, y: -.707023144, z: .0108772274, w: .707023084}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_heelPivot_GRP
+      position: {x: .0439479947, y: .0149871651, z: .0107751805}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_tipToe_GRP
+      position: {x: -.00530521711, y: -.0143115222, z: -.0875833556}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_peelHeel_GRP
+      position: {x: .00530521711, y: .000143247817, z: .0387263149}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_AnkleIK1
+      position: {x: -1.38777878e-17, y: .0141682746, z: .0488570444}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_toeTap_GRP
+      position: {x: .00530521711, y: .000143247817, z: .0387263149}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_BallIK1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_ToeIK1
+      position: {x: 1.38777878e-17, y: .00117240543, z: -.0386893786}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Ankle_IK_GRP
+      position: {x: -.0439401381, y: .0149678998, z: .0107063875}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_TipToe_GRP
+      position: {x: 1.22255095e-10, y: -.0133911101, z: -.0875463933}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_PeelHeel_GRP
+      position: {x: -1.22255123e-10, y: .00119887001, z: .0386893004}
+      rotation: {x: -.000169300183, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_AnkleIK
+      position: {x: -1.48996304e-09, y: .0121923489, z: .0488570891}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_ToeTap_GRP
+      position: {x: -1.22255123e-10, y: .00119887001, z: .0386893004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_BallIK
+      position: {x: -7.49400542e-16, y: 6.04014616e-09, z: 2.41691875e-08}
+      rotation: {x: -.0863672271, y: -.701812446, z: .0863672122, w: .701812446}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_ToeIK
+      position: {x: 1.27104938e-09, y: -.00121204567, z: -.0386888646}
+      rotation: {x: -.0110721076, y: -.707020104, z: .0110720992, w: .707020104}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_heelPivot_GRP
+      position: {x: -.0439401381, y: .0149678998, z: .0107063875}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_tipToe_GRP
+      position: {x: -1.38777878e-17, y: -.0129958997, z: -.0875463933}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_peelHeel_GRP
+      position: {x: -0, y: -.00117240101, z: .0386893004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_AnkleIK1
+      position: {x: 1.38777878e-17, y: .0141683007, z: .0488570891}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_toeTap_GRP
+      position: {x: -0, y: -.00117240101, z: .0386893004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_BallIK1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_ToeIK1
+      position: {x: -0, y: .00117240101, z: -.0386893004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PV_RIG
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Legs_PV
+      position: {x: .0436583087, y: .216671899, z: -.251810014}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Legs_PV
+      position: {x: -.0441046767, y: .216671899, z: -.251810014}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Master_CTRL
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
