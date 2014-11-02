@@ -9,7 +9,7 @@ public class PlayerMotor : MonoBehaviour {
 	public float axisExponent = 3.0f;
 	public float vel = 2.0f;
 	public float maxVel = 8.0f;
-	public static float playerScale = 1.0f;
+	public float playerScale = 1.0f;
 	private Vector3 forwardVector;
 	private Transform tf;
 	private Rigidbody rb;
@@ -46,6 +46,7 @@ public class PlayerMotor : MonoBehaviour {
 		targetRot = Quaternion.LookRotation(tf.rotation * -kiteString, -GetComponent<GravityHandler>().Gravity);
 		cameraForward = Vector3.forward;
 		cameraRight = Vector3.right;
+		tf.localScale = new Vector3(playerScale, playerScale, playerScale);
 	}
 	
 	// Update is called once per frame
