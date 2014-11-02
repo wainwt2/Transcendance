@@ -20,22 +20,26 @@ public class PlaceBackHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "player") {
+
 			if (PositionsPath.Count >= SetbackAmount) {//check amount of positions we have
 
 				for (int i = PositionsPath.Count - 1; i > -1; --i) {//if we have enough or more
+					//Debug.Log(i);
 					if (i == PositionsPath.Count - SetbackAmount) {
-						Player.GetComponent<Transform>().position = PositionsPath[i].GetComponent<Transform>().position;
+						other.gameObject.GetComponent<Transform>().position = PositionsPath[i].GetComponent<Transform>().position;
 						break;
 					}
 				}
 			}
+
+
 			else {//if we don't have as many as SetbackAmount
-				Player.GetComponent<Transform>().position = PositionsPath[0].GetComponent<Transform>().position;
+				other.gameObject.GetComponent<Transform>().position = PositionsPath[0].GetComponent<Transform>().position;
 			}
 			List<GameObject> tempList = new List<GameObject>();
 			for (int i = 0; i < PositionsPath.Count - SetbackAmount; ++i) {

@@ -79,7 +79,7 @@ public class CameraSystem : MonoBehaviour {
 		EndRot = SelectedCam.GetComponent<Transform>().rotation;
 
 		if (isMoving == true) {//interpolate between positions if we are moving
-			if (UsingInterpolation == true) {
+			if (UsingInterpolation == true) {//determine which movement type to use
 				MoveWithLerp();
 			}
 			else {
@@ -88,23 +88,13 @@ public class CameraSystem : MonoBehaviour {
 		}
 	}
 
-	void AssignSelectedCam() {
+	void AssignSelectedCam() {//grab the camera position we are currently using
 		if (UsingPlayerCam == true) {
 			SelectedCam = PlayerCamera;
 		}
 		else {
 			SelectedCam = WorldCameraList[WorldCamPosition];
 		}
-	}
-
-	void UsePlayerCam() {//operations when using the playerCam
-		ViewCam.GetComponent<Transform>().position = PlayerCamera.GetComponent<Transform>().position;
-		ViewCam.GetComponent<Transform>().rotation = PlayerCamera.GetComponent<Transform>().rotation;
-	}
-
-	void UseWorldCam(int camIndex) {//operations when using the worldCams
-		ViewCam.GetComponent<Transform>().position = WorldCameraList[camIndex].GetComponent<Transform>().position;
-		ViewCam.GetComponent<Transform>().rotation = WorldCameraList[camIndex].GetComponent<Transform>().rotation;
 	}
 
 	void MoveWithLerp() {

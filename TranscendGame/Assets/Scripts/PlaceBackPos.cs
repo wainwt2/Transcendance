@@ -24,7 +24,7 @@ public class PlaceBackPos : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "player") {
-			Pit.GetComponent<PlaceBackHandler>().PositionsPath.Add(other.gameObject);
+			Pit.GetComponent<PlaceBackHandler>().PositionsPath.Add(gameObject);
 		}
 	}
 }
