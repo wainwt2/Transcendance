@@ -20,16 +20,21 @@ public class PlayerMotor : MonoBehaviour {
 	private Transform cameraTf;
 	private Quaternion targetRot;
 	private Vector3 targetPos;
-	private Vector3 cameraForward;
-	private Vector3 cameraRight;
+	public Vector3 cameraForward;
+	public Vector3 cameraRight;
 	private int stopTime;
 	private int cameraMoveTime = 100;
 	public bool movementBasedOnGravityVolumes = false;
+	public bool usingPlayerCamera = true;
 	public Transform nirvanaLockTf;
 	public bool nirvanaLocked = false;
 
 	// Use this for initialization
 	void Start () {
+		if (usingPlayerCamera) {
+			cameraPos = (GameObject)Instantiate(cameraPos);
+			cameraTf = cameraPos.GetComponent<Transform>();
+		}
 		deadZone = 0.05f;
 		tf = GetComponent<Transform>();
 		rb = GetComponent<Rigidbody>();
@@ -39,7 +44,8 @@ public class PlayerMotor : MonoBehaviour {
 		stopTime = 0;
 		targetPos = tf.rotation * kiteString + tf.position;
 		targetRot = Quaternion.LookRotation(tf.rotation * -kiteString, -GetComponent<GravityHandler>().Gravity);
-		cameraTf = cameraPos.GetComponent<Transform>();
+		cameraForward = Vector3.forward;
+		cameraRight = Vector3.right;
 	}
 	
 	// Update is called once per frame
@@ -55,10 +61,12 @@ public class PlayerMotor : MonoBehaviour {
 		// Remove any angular velocity
 		rb.angularVelocity = Vector3.zero;
 		// Set camera position to target position
-		cameraTf.position = targetPos;
-		cameraTf.rotation = targetRot;
-		cameraForward = lastAligned * Vector3.forward;
-		cameraRight = lastAligned * Vector3.right;
+		if (usingPlayerCamera) {
+			cameraTf.position = targetPos;
+			cameraTf.rotation = targetRot;
+			cameraForward = lastAligned * Vector3.forward;
+			cameraRight = lastAligned * Vector3.right;
+		}
 		// Check for player input
 		hAxis = Input.GetAxis("Horizontal");
 		vAxis = Input.GetAxis("Vertical");
