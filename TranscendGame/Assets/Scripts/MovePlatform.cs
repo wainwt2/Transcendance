@@ -7,7 +7,9 @@ public class MovePlatform : MonoBehaviour {
 	int sign = 1;
 
 	public float speed = 0.5f; 
-	
+
+	public bool invertInitialMovementDirection = false;
+
 	public bool ignoreX = false;
 	public bool ignoreY = false;
 	public bool ignoreZ = false;
@@ -21,6 +23,9 @@ public class MovePlatform : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		if (invertInitialMovementDirection) {
+			sign = -1;		
+		}
 		tf = GetComponent<Transform>();
 		renderer = GetComponent<Renderer>();	
 	}
