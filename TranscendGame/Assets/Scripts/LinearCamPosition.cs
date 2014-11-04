@@ -8,7 +8,8 @@ public class LinearCamPosition : MonoBehaviour {
 	Vector3 initialPosition;
 	Quaternion initialRotation;
 
-	public float distFromPlayer = 2.0f;
+	public float distFromPlayer = 4.0f;
+	public float elevation = 1.0f;
 
 	public char LockAxis = 'x';
 
@@ -25,7 +26,7 @@ public class LinearCamPosition : MonoBehaviour {
 
 		if (LockAxis == 'x') {
 			tf.position = new Vector3(Player.GetComponent<Transform>().position.x + distFromPlayer,
-			                          Player.GetComponent<Transform>().position.y,
+			                          Player.GetComponent<Transform>().position.y + elevation,
 			                          Player.GetComponent<Transform>().position.z);
 		}
 		if (LockAxis == 'y') {
