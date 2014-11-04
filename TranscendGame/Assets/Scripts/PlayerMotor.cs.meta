@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: 0adc256fcf35b374a9432be9e86f63d0
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cameraPos: {fileID: 100000, guid: 25b8eaad0f9ae0b42b7d68a1a2e1c00d, type: 2}
+  - nirvanaLockTf: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
