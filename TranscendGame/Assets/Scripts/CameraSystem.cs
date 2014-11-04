@@ -109,6 +109,15 @@ public class CameraSystem : MonoBehaviour {
 		if (fract >= 1.0f) {//Jerry-rigged fix
 			StartPos = EndPos;
 			StartRot = EndRot;
+			//UsingInterpolation = false;
+		/*
+			if (SelectedCam.tag == "playerCam") {
+				UsingInterpolation = false;
+			}
+			else {
+				UsingInterpolation = true;
+			}
+		*/
 		}
 
 	}
