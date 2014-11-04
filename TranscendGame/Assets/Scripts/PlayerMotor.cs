@@ -32,6 +32,7 @@ public class PlayerMotor : MonoBehaviour {
 	public float jumpForce = 30f;
 	public Vector3 footOrigin = new Vector3(0f, -0.45f, 0f);
 	public Animator boyAnimator;
+	private Vector3 locVel;
 
 	// Use this for initialization
 	void Start () {
@@ -86,9 +87,21 @@ public class PlayerMotor : MonoBehaviour {
 				forwardVector.Normalize();
 			}
 			Debug.DrawRay(tf.position, forwardVector * vel * playerScale, Color.red);
+			Quaternion snapRot = tf.rotation;
 			tf.rotation = Quaternion.LookRotation(forwardVector, -GetComponent<GravityHandler>().Gravity);
+			// reduce sliding
+			if (Mathf.Abs(Quaternion.Angle(snapRot, tf.rotation)) > 0.05f) {
+				locVel = transform.InverseTransformDirection(rigidbody.velocity);
+				locVel.x = 0;
+				rigidbody.velocity = transform.TransformDirection(locVel);
+			}
+			// add the new forward velocity
 			rb.AddForce(tf.forward * vel * playerScale);
-			rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVel * playerScale);
+			locVel = transform.InverseTransformDirection(rigidbody.velocity);
+			if (locVel.z > maxVel * playerScale) {
+				locVel.z = maxVel * playerScale;
+			}
+			rigidbody.velocity = transform.TransformDirection(locVel);
 			stopTime = 0;
 			boyAnimator.SetBool("Run", true);
 		}
