@@ -28,7 +28,7 @@ public class PlayerMotor : MonoBehaviour {
 	public bool usingPlayerCamera = true;
 	public Transform nirvanaLockTf;
 	public bool nirvanaLocked = false;
-	private bool jumping = false;
+	public bool jumping = false;
 	public float jumpForce = 30f;
 	public Vector3 footOrigin = new Vector3(0f, -0.45f, 0f);
 	public Animator boyAnimator;
@@ -88,6 +88,7 @@ public class PlayerMotor : MonoBehaviour {
 			Debug.DrawRay(tf.position, forwardVector * vel * playerScale, Color.red);
 			tf.rotation = Quaternion.LookRotation(forwardVector, -GetComponent<GravityHandler>().Gravity);
 			rb.AddForce(tf.forward * vel * playerScale);
+			rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVel * playerScale);
 			stopTime = 0;
 			boyAnimator.SetBool("Run", true);
 		}
@@ -102,6 +103,7 @@ public class PlayerMotor : MonoBehaviour {
 		}
 		if (!canMove && nirvanaLocked) {
 			tf.position = nirvanaLockTf.position;
+			jumping = true;
 		}
 		// Allow the player to jump
 		if (Input.GetKeyDown(KeyCode.Space) && !jumping) {
