@@ -15,6 +15,7 @@ public class PlayerMotor : MonoBehaviour {
 	private Rigidbody rb;
 	public bool canMove;
 	public Quaternion lastAligned;
+	private Quaternion tempQuat;
 	public Vector3 kiteString;
 	public GameObject cameraPos;
 	private Transform cameraTf;
@@ -44,10 +45,12 @@ public class PlayerMotor : MonoBehaviour {
 		canMove = true;
 		nirvanaLocked = false;
 		stopTime = 0;
+		cameraMoveTime = 20;
 		targetPos = tf.rotation * kiteString + tf.position;
 		targetRot = Quaternion.LookRotation(tf.rotation * -kiteString, -GetComponent<GravityHandler>().Gravity);
 		cameraForward = Vector3.forward;
 		cameraRight = Vector3.right;
+		lastAligned = tf.rotation;
 	}
 	
 	// Update is called once per frame
@@ -87,6 +90,7 @@ public class PlayerMotor : MonoBehaviour {
 			Debug.DrawRay(tf.position, forwardVector * vel * playerScale, Color.red);
 			tf.rotation = Quaternion.LookRotation(forwardVector, -GetComponent<GravityHandler>().Gravity);
 			rb.AddForce(tf.forward * vel * playerScale);
+			rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVel * playerScale);
 			stopTime = 0;
 		}
 		// To make sure the player doesn't spin around randomly because of stupid physics reasons
