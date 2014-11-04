@@ -35,7 +35,6 @@ public class PlayerMotor : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if (usingPlayerCamera) {
-			cameraPos = (GameObject)Instantiate(cameraPos);
 			cameraTf = cameraPos.GetComponent<Transform>();
 		}
 		deadZone = 0.05f;
