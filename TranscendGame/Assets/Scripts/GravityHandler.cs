@@ -34,7 +34,7 @@ public class GravityHandler : MonoBehaviour {
 		rigBody.AddForce(Gravity);
 
 		rigBody.velocity = Vector3.ClampMagnitude(rigBody.velocity, TerminalVelocity);
-		Debug.DrawRay(tf.position, Gravity, Color.black);
+		//Debug.DrawRay(tf.position, Gravity, Color.black);
 	}
 
 	public void applyNewGravDirection(Vector3 gravDirection, Quaternion gravRotation) {

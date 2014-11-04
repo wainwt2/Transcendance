@@ -28,11 +28,13 @@ public class PlayerMotor : MonoBehaviour {
 	public bool usingPlayerCamera = true;
 	public Transform nirvanaLockTf;
 	public bool nirvanaLocked = false;
+	private bool jumping = false;
+	public float jumpForce = 30f;
+	public Vector3 footOrigin = new Vector3(0f, -0.45f, 0f);
 
 	// Use this for initialization
 	void Start () {
 		if (usingPlayerCamera) {
-			cameraPos = (GameObject)Instantiate(cameraPos);
 			cameraTf = cameraPos.GetComponent<Transform>();
 		}
 		deadZone = 0.05f;
@@ -98,6 +100,20 @@ public class PlayerMotor : MonoBehaviour {
 		if (!canMove && nirvanaLocked) {
 			tf.position = nirvanaLockTf.position;
 		}
+		// Allow the player to jump
+		if (Input.GetKeyDown(KeyCode.Space) && !jumping) {
+			Debug.Log("Said Apple.");
+			rb.AddForce(GetComponent<GravityHandler>().Gravity * -jumpForce * playerScale);
+			jumping = true;
+		}
+		// Check if the player has landed from a jump
+		else if(Physics.Raycast(tf.rotation * footOrigin + tf.position, GetComponent<GravityHandler>().Gravity, 0.1f)) {
+			if (jumping) {
+				Debug.Log("The Eagle Has Landed.");
+				jumping = false;
+			}
+		}
+		Debug.DrawRay(tf.rotation * footOrigin + tf.position, GetComponent<GravityHandler>().Gravity * 0.1f, Color.white);
 	}
 	
 }
