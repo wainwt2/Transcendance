@@ -33,6 +33,7 @@ public class PlayerMotor : MonoBehaviour {
 	public Vector3 footOrigin = new Vector3(0f, -0.45f, 0f);
 	public Animator boyAnimator;
 	private Vector3 locVel;
+	private Quaternion locRot;
 	private Vector3 gravSnap;
 
 	// Use this for initialization
@@ -60,7 +61,8 @@ public class PlayerMotor : MonoBehaviour {
 		Debug.DrawRay(tf.position, tf.up * 5, Color.green);
 		// realign rotation to gravity
 		if (GetComponent<GravityHandler>().Gravity != gravSnap) {
-			tf.rotation = Quaternion.LookRotation(GetComponent<GravityHandler>().gravForward, -GetComponent<GravityHandler>().Gravity);
+			locRot = Quaternion.Euler(0f, tf.rotation.eulerAngles.y, 0f);
+			tf.rotation = Quaternion.LookRotation(locRot * GetComponent<GravityHandler>().gravForward, -GetComponent<GravityHandler>().Gravity);
 			lastAligned = tf.rotation;
 		}
 		// Debug: Constantly update target camera position and rotation
@@ -97,17 +99,17 @@ public class PlayerMotor : MonoBehaviour {
 			tf.rotation = Quaternion.LookRotation(forwardVector, -GetComponent<GravityHandler>().Gravity);
 			// reduce sliding
 			if (Mathf.Abs(Quaternion.Angle(snapRot, tf.rotation)) > 0.05f) {
-				locVel = transform.InverseTransformDirection(rigidbody.velocity);
+				locVel = tf.InverseTransformDirection(rb.velocity);
 				locVel.x = 0;
-				rigidbody.velocity = transform.TransformDirection(locVel);
+				rb.velocity = tf.TransformDirection(locVel);
 			}
 			// add the new forward velocity
 			rb.AddForce(tf.forward * vel * playerScale);
-			locVel = transform.InverseTransformDirection(rigidbody.velocity);
+			locVel = tf.InverseTransformDirection(rb.velocity);
 			if (locVel.z > maxVel * playerScale) {
 				locVel.z = maxVel * playerScale;
 			}
-			rigidbody.velocity = transform.TransformDirection(locVel);
+			rb.velocity = tf.TransformDirection(locVel);
 			stopTime = 0;
 			boyAnimator.SetBool("Run", true);
 		}
