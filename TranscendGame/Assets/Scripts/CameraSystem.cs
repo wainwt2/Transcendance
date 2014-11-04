@@ -58,7 +58,7 @@ public class CameraSystem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (StartPos == EndPos) {//check if we must move the camera
+		if (StartPos == EndPos && StartRot == EndRot) {//check if we must move the camera
 			isMoving = false;
 			StartTime = Time.time;
 		}
