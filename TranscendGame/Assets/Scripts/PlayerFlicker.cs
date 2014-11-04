@@ -24,7 +24,12 @@ public class PlayerFlicker : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		meshRender.material.color = new Color(meshRender.material.color.r,
+		                                      meshRender.material.color.g,
+		                                      meshRender.material.color.b,
+		                                      0.0f);
 
+	/*
 		float AlphaFract = (Time.time - StartTime) / changeTime;
 
 		Color meshColor = meshRender.material.color;
@@ -41,6 +46,7 @@ public class PlayerFlicker : MonoBehaviour {
 			updateTime();//grab new time
 			isVisible = !isVisible;//flip the direction we're transitioning the alpha
 		}
+		*/
 	}
 
 	void updateTime() {
