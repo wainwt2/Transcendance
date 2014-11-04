@@ -33,6 +33,7 @@ public class PlayerMotor : MonoBehaviour {
 	public Vector3 footOrigin = new Vector3(0f, -0.45f, 0f);
 	public Animator boyAnimator;
 	private Vector3 locVel;
+	private Vector3 gravSnap;
 
 	// Use this for initialization
 	void Start () {
@@ -57,6 +58,11 @@ public class PlayerMotor : MonoBehaviour {
 		// Debug: draw forward line
 		Debug.DrawRay(tf.position, tf.forward * 5, Color.blue);
 		Debug.DrawRay(tf.position, tf.up * 5, Color.green);
+		// realign rotation to gravity
+		if (GetComponent<GravityHandler>().Gravity != gravSnap) {
+			tf.rotation = Quaternion.LookRotation(GetComponent<GravityHandler>().gravForward, -GetComponent<GravityHandler>().Gravity);
+			lastAligned = tf.rotation;
+		}
 		// Debug: Constantly update target camera position and rotation
 		//lastAligned = tf.rotation;
 		// Update target camera position
@@ -137,6 +143,7 @@ public class PlayerMotor : MonoBehaviour {
 		Debug.DrawRay(tf.rotation * footOrigin + tf.position, GetComponent<GravityHandler>().Gravity * 0.1f, Color.white);
 		// Remove any angular velocity AGAIN
 		rb.angularVelocity = Vector3.zero;
+		gravSnap = GetComponent<GravityHandler>().Gravity;
 	}
 	
 }
