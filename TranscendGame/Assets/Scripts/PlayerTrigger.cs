@@ -36,6 +36,8 @@ public class PlayerTrigger : MonoBehaviour {
 					tf.parent.GetComponent<Transform>().position = other.GetComponent<Transform>().position + new Vector3(0f, 0f, -3.0f);
 					tf.parent.GetComponent<Collider>().enabled = true;
 					tf.parent.GetComponent<GravityHandler>().enabled = true;
+					tf.parent.GetComponent<PlayerMotor>().jumping = true;
+					tf.parent.GetComponent<PlayerMotor>().boyAnimator.SetBool("InAir", true);
 				}
 			}
 		}
