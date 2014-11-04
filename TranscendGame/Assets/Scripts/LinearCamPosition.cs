@@ -36,7 +36,7 @@ public class LinearCamPosition : MonoBehaviour {
 		}
 		if (LockAxis == 'z') {
 			tf.position = new Vector3(Player.GetComponent<Transform>().position.x,
-			                          Player.GetComponent<Transform>().position.y,
+			                          Player.GetComponent<Transform>().position.y + elevation,
 			                          Player.GetComponent<Transform>().position.z + distFromPlayer);
 		}
 
