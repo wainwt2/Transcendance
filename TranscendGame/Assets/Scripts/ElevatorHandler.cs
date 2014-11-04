@@ -11,11 +11,14 @@ public class ElevatorHandler : MonoBehaviour {
 	private Transform door2tf;
 	private Transform tf;
 	public float upwardSpeed;
-	public static bool doorsUnlocked;
-	public static bool doorsOpen;
+	public bool doorsUnlocked;
+	public bool doorsOpen;
+	public Light elevatorLight;
+	public float maxIntensity = 2;
 
 	// Use this for initialization
 	void Start () {
+		elevatorLight.intensity = 0;
 		doorsUnlocked = false;
 		doorsOpen = false;
 		door1tf = door1.GetComponent<Transform>();
@@ -56,6 +59,7 @@ public class ElevatorHandler : MonoBehaviour {
 			for (int i = 0; i < frames; i++) {
 				door1tf.position += (door1Slide/(float)frames);
 				door2tf.position += (door2Slide/(float)frames);
+				elevatorLight.intensity += (maxIntensity/(float)frames);
 				yield return new WaitForFixedUpdate();
 			}
 		}
@@ -67,6 +71,7 @@ public class ElevatorHandler : MonoBehaviour {
 			for (int i = 0; i < frames; i++) {
 				door1tf.position -= (door1Slide/(float)frames);
 				door2tf.position -= (door2Slide/(float)frames);
+				elevatorLight.intensity -= (maxIntensity/(float)frames);
 				yield return new WaitForFixedUpdate();
 			}
 			if (moveUpwardOnFinish) {
