@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerFlicker : MonoBehaviour {
 
-	MeshRenderer meshRender;
+	SkinnedMeshRenderer meshRender;
 
 	public float randMin = 3.0f;
 	public float randMax = 7.0f;
@@ -17,7 +17,7 @@ public class PlayerFlicker : MonoBehaviour {
 	void Start () {
 
 		//meshRender = GetComponent<MeshRenderer>();
-		meshRender = GetComponentInChildren<MeshRenderer>();
+		meshRender = GetComponent<SkinnedMeshRenderer>();
 
 		updateTime();
 	
@@ -25,10 +25,13 @@ public class PlayerFlicker : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//meshRender.enabled = false;
+		/*
 		meshRender.material.color = new Color(meshRender.material.color.r,
 		                                      meshRender.material.color.g,
 		                                      meshRender.material.color.b,
 		                                      0.0f);
+		*/
 
 	/*
 		float AlphaFract = (Time.time - StartTime) / changeTime;
@@ -49,6 +52,8 @@ public class PlayerFlicker : MonoBehaviour {
 		}
 		*/
 	}
+
+	//public IEnumerator FadeOut
 
 	void updateTime() {
 		changeTime = Random.Range(randMin, randMax);
