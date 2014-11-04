@@ -32,6 +32,7 @@ public class PlayerMotor : MonoBehaviour {
 	private bool jumping = false;
 	public float jumpForce = 30f;
 	public Vector3 footOrigin = new Vector3(0f, -0.45f, 0f);
+	public Animator boyAnimator;
 
 	// Use this for initialization
 	void Start () {
@@ -92,11 +93,13 @@ public class PlayerMotor : MonoBehaviour {
 			rb.AddForce(tf.forward * vel * playerScale);
 			rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVel * playerScale);
 			stopTime = 0;
+			boyAnimator.SetBool("Run", true);
 		}
 		// To make sure the player doesn't spin around randomly because of stupid physics reasons
 		else {
 			tf.rotation = Quaternion.LookRotation(forwardVector, -GetComponent<GravityHandler>().Gravity);
 			stopTime++;
+			boyAnimator.SetBool("Run", false);
 		}
 		if (stopTime >= cameraMoveTime) {
 			lastAligned = tf.rotation;
@@ -109,15 +112,20 @@ public class PlayerMotor : MonoBehaviour {
 			Debug.Log("Said Apple.");
 			rb.AddForce(GetComponent<GravityHandler>().Gravity * -jumpForce * playerScale);
 			jumping = true;
+			boyAnimator.SetTrigger("JumpTrig");
+			boyAnimator.SetBool("InAir", true);
 		}
 		// Check if the player has landed from a jump
 		else if(Physics.Raycast(tf.rotation * footOrigin + tf.position, GetComponent<GravityHandler>().Gravity, 0.1f)) {
 			if (jumping) {
 				Debug.Log("The Eagle Has Landed.");
 				jumping = false;
+				boyAnimator.SetBool("InAir", false);
 			}
 		}
 		Debug.DrawRay(tf.rotation * footOrigin + tf.position, GetComponent<GravityHandler>().Gravity * 0.1f, Color.white);
+		// Remove any angular velocity AGAIN
+		rb.angularVelocity = Vector3.zero;
 	}
 	
 }
