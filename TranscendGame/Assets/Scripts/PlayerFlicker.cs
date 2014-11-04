@@ -5,8 +5,8 @@ public class PlayerFlicker : MonoBehaviour {
 
 	MeshRenderer meshRender;
 
-	float randMin = 3.0f;
-	float randMax = 7.0f;
+	public float randMin = 3.0f;
+	public float randMax = 7.0f;
 
 	private float changeTime;
 	private float StartTime;
@@ -16,7 +16,8 @@ public class PlayerFlicker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		meshRender = GetComponent<MeshRenderer>();
+		//meshRender = GetComponent<MeshRenderer>();
+		meshRender = GetComponentInChildren<MeshRenderer>();
 
 		updateTime();
 	
