@@ -10,7 +10,7 @@ public class ElevatorHandler : MonoBehaviour {
 	private Transform door1tf;
 	private Transform door2tf;
 	private Transform tf;
-	public float upwardSpeed;
+	public Vector3 escapeVector;
 	public bool doorsUnlocked;
 	public bool doorsOpen;
 	public bool startWithDoorsOpen = false;
@@ -88,7 +88,7 @@ public class ElevatorHandler : MonoBehaviour {
 
 	IEnumerator MoveUpwards() {
 		while (true) {
-			Vector3 dPos = tf.rotation * new Vector3(0f, upwardSpeed, 0f);
+			Vector3 dPos = tf.rotation * escapeVector;
 			tf.position += dPos;
 			yield return new WaitForFixedUpdate();
 		}
