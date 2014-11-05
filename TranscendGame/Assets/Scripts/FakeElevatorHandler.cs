@@ -13,8 +13,12 @@ public class FakeElevatorHandler : MonoBehaviour {
 	public Vector3 escapeVector;
 	public bool doorsUnlocked;
 	public bool doorsOpen;
+	public bool startWithDoorsOpen = false;
 	public Light elevatorLight;
 	public float maxIntensity = 2;
+
+	Color Gold = new Color(255, 255, 140);
+	Color Red = new Color(240, 43, 17);
 	
 	// Use this for initialization
 	void Start () {
@@ -28,6 +32,12 @@ public class FakeElevatorHandler : MonoBehaviour {
 		door2Slide = new Vector3(2.0f, 0f, 0f);
 		door1Slide = tf.rotation * door1Slide;
 		door2Slide = tf.rotation * door2Slide;
+
+		//elevatorLight.color = Gold;
+
+		if (startWithDoorsOpen = true) {
+			StartCoroutine(OpenDoors(30));
+		}
 	}
 	
 	// Update is called once per frame
@@ -48,8 +58,12 @@ public class FakeElevatorHandler : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "player") {
-			other.GetComponent<PlayerMotor>().canMove = false;
-			StartCoroutine(CloseDoors(30, true));
+			//other.GetComponent<PlayerMotor>().canMove = false;
+			//StartCoroutine(CloseDoors(30, true));
+			elevatorLight.color = Red;
+			//elevatorLight.color = new Color(Red.r, Red.g, Red.b);
+			//elevatorLight.enabled = false;
+			StartCoroutine(StartCountDown(5.0f, Time.time));
 		}
 	}
 	
@@ -62,6 +76,20 @@ public class FakeElevatorHandler : MonoBehaviour {
 				elevatorLight.intensity += (maxIntensity/(float)frames);
 				yield return new WaitForFixedUpdate();
 			}
+		}
+	}
+
+	IEnumerator StartCountDown(float time, float startTime) {
+		//while (elevatorLight.color != Red) {
+		bool truthSwitch = false;
+		while (true) {
+
+			if (Time.time - startTime >= time) {
+				StartCoroutine(CloseDoors(30, true));
+				break;
+			}
+
+			yield return null;
 		}
 	}
 	
@@ -85,7 +113,7 @@ public class FakeElevatorHandler : MonoBehaviour {
 			Vector3 dPos = tf.rotation * escapeVector;
 			tf.position += dPos;
 			GameObject player = GameObject.FindGameObjectWithTag("player");
-			player.GetComponent<Transform>().position += dPos;
+			//player.GetComponent<Transform>().position += dPos;
 			yield return new WaitForFixedUpdate();
 		}
 	}

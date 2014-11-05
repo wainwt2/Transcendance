@@ -33,8 +33,10 @@ public class NextLevelScript : MonoBehaviour {
 				PressToAdvance = true;
 			}
 		}
-		if (PressToAdvance = true) {
+		if (PressToAdvance == true) {
 			if (Input.GetKeyDown(KeyCode.Space)) {
+				FadedIn = false;
+				PressToAdvance = false;
 				Application.LoadLevel(NextLevel);
 			}
 		}
