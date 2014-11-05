@@ -14,5 +14,6 @@ public class AnimationLock : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		tf.localPosition = lockPos;
+		tf.localRotation = Quaternion.identity;
 	}
 }
