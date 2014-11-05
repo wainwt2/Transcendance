@@ -29,7 +29,6 @@ public class MoveWithPlatform : MonoBehaviour {
 	}
 
 	void OnTriggerStay(Collider other) {
-		Debug.Log(other.tag);
 		other.gameObject.GetComponent<Transform>().position += deltaPos;
 	}
 }
