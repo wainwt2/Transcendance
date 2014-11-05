@@ -36,6 +36,7 @@ public class CanvasFadeInAndOut : MonoBehaviour {
 		if (other.tag == "player") {
 			StartTime = Time.time;
 			StartCoroutine(FadeIn(FramesTillText));
+			StartCoroutine(FadeOut(200));
 		}
 	}
 	
@@ -49,7 +50,7 @@ public class CanvasFadeInAndOut : MonoBehaviour {
 		if (Time.time - StartTime >= TimeForFade) {
 			StartFadeTime = Time.time;
 			FadedIn = true;
-			StartCoroutine(FadeOut(numFrames));
+
 		}
 
 	}
@@ -57,7 +58,7 @@ public class CanvasFadeInAndOut : MonoBehaviour {
 	IEnumerator FadeOut (int numFrames) {//for fading in endCanvas
 		while (Time.time - StartTime < TimeForFade) {
 			
-			endCanvas.GetComponent<CanvasGroup>().alpha = (-Time.time + StartTime) / TimeForFade;
+			endCanvas.GetComponent<CanvasGroup>().alpha = 255 - (Time.time - StartTime) / TimeForFade;
 			
 			yield return null;
 		}
