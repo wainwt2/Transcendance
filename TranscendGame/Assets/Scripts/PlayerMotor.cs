@@ -35,6 +35,7 @@ public class PlayerMotor : MonoBehaviour {
 	private Vector3 locVel;
 	private Quaternion locRot;
 	private Vector3 gravSnap;
+	private Vector3 gravForSnap;
 
 	// Use this for initialization
 	void Start () {
@@ -61,9 +62,8 @@ public class PlayerMotor : MonoBehaviour {
 		Debug.DrawRay(tf.position, tf.up * 5, Color.green);
 		// realign rotation to gravity
 		if (GetComponent<GravityHandler>().Gravity != gravSnap) {
-			//locRot = Quaternion.Euler(0f, tf.rotation.eulerAngles.y, 0f);
-			tf.rotation = Quaternion.LookRotation(GetComponent<GravityHandler>().Gravity);
-			tf.Rotate(-90f, 0f, 0f);
+			locRot = Quaternion.FromToRotation(gravForSnap, tf.forward);
+			tf.rotation = Quaternion.LookRotation(locRot * GetComponent<GravityHandler>().gravForward, -GetComponent<GravityHandler>().Gravity);
 			lastAligned = tf.rotation;
 		}
 		// Debug: Constantly update target camera position and rotation
@@ -147,6 +147,7 @@ public class PlayerMotor : MonoBehaviour {
 		// Remove any angular velocity AGAIN
 		rb.angularVelocity = Vector3.zero;
 		gravSnap = GetComponent<GravityHandler>().Gravity;
+		gravForSnap = GetComponent<GravityHandler>().gravForward;
 	}
 	
 }
