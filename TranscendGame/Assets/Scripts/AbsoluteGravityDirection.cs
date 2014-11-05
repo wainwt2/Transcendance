@@ -10,6 +10,9 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 	BoxCollider collider;
 	
 	GameObject Player;
+	GameObject[] GravBodies;
+
+	Quaternion rotSnap;
 	
 	public Vector3 GravDirection;
 	public float GravScale = 1f;
@@ -19,6 +22,8 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 		collider = GetComponent<BoxCollider>();
 		
 		Player = GameObject.FindGameObjectWithTag("player");
+		GravBodies = GameObject.FindGameObjectsWithTag("gravBody");
+		rotSnap = tf.rotation;
 	}
 	
 	// Update is called once per frame
@@ -27,11 +32,17 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 		GravDirection = new Vector3(GravScale * GravDirection.x,
 		                            GravScale * GravDirection.y,
 		                            GravScale * GravDirection.z);
-		
+		if (tf.rotation != rotSnap) {
+			Debug.Log("The world is spinning!");
+			foreach (GameObject gravBody in GravBodies) {
+				SetGravity(gravBody);
+			}
+			SetGravity(Player);
+		}
 		//Debug.Log(GravDirection);
 		Debug.DrawRay(tf.position, tf.up * -5, Color.black);
 		Debug.DrawRay(tf.position, tf.forward * 5, Color.green);
-
+		rotSnap = tf.rotation;
 	}
 	
 	void OnTriggerEnter(Collider other) {
