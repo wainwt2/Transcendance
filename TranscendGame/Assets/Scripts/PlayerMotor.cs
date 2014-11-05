@@ -41,6 +41,7 @@ public class PlayerMotor : MonoBehaviour {
 	private Vector3 gravRigSnap;
 	private Vector3 forSnap;
 	private Vector3 rigSnap;
+	private RaycastHit rHit;
 
 	// Use this for initialization
 	void Start () {
@@ -150,12 +151,17 @@ public class PlayerMotor : MonoBehaviour {
 			boyAnimator.SetBool("InAir", true);
 		}
 		// Check if the player has landed from a jump
-		else if(Physics.Raycast(tf.rotation * footOrigin + tf.position, GetComponent<GravityHandler>().Gravity, 0.1f)) {
-			if (jumping) {
+		else if(Physics.Raycast(tf.rotation * footOrigin + tf.position, GetComponent<GravityHandler>().Gravity, out rHit, 0.1f)) {
+			if (jumping && !rHit.collider.isTrigger) {
 				Debug.Log("The Eagle Has Landed.");
 				jumping = false;
 				boyAnimator.SetBool("InAir", false);
 			}
+		}
+		else if (!jumping){
+			Debug.Log("OH GOD WHERE DID THE GROUND GO");
+			jumping = true;
+			boyAnimator.SetBool("InAir", true);
 		}
 		Debug.DrawRay(tf.rotation * footOrigin + tf.position, GetComponent<GravityHandler>().Gravity * 0.1f, Color.white);
 		// Remove any angular velocity AGAIN
