@@ -41,7 +41,7 @@ public class PlayerMotor : MonoBehaviour {
 	private Vector3 gravRigSnap;
 	private Vector3 forSnap;
 	private Vector3 rigSnap;
-	private RaycastHit rHit;
+	private RaycastHit[] rHit;
 
 	// Use this for initialization
 	void Start () {
@@ -60,6 +60,7 @@ public class PlayerMotor : MonoBehaviour {
 		cameraForward = Vector3.forward;
 		cameraRight = Vector3.right;
 		lastAligned = tf.rotation;
+		tf.localScale = new Vector3(playerScale, playerScale, playerScale);
 	}
 	
 	// Update is called once per frame
@@ -142,6 +143,7 @@ public class PlayerMotor : MonoBehaviour {
 			tf.position = nirvanaLockTf.position;
 			jumping = true;
 		}
+		rHit = Physics.RaycastAll(tf.rotation * (footOrigin * playerScale) + tf.position, GetComponent<GravityHandler>().Gravity, 0.1f);
 		// Allow the player to jump
 		if (Input.GetKeyDown(KeyCode.Space) && !jumping) {
 			Debug.Log("Said Apple.");
@@ -151,14 +153,16 @@ public class PlayerMotor : MonoBehaviour {
 			boyAnimator.SetBool("InAir", true);
 		}
 		// Check if the player has landed from a jump
-		else if(Physics.Raycast(tf.rotation * footOrigin + tf.position, GetComponent<GravityHandler>().Gravity, out rHit, 0.1f)) {
-			if (jumping && !rHit.collider.isTrigger) {
-				Debug.Log("The Eagle Has Landed.");
-				jumping = false;
-				boyAnimator.SetBool("InAir", false);
+		else if (rHit.LongLength > 0) {
+			foreach (RaycastHit rh in rHit) {
+				if (jumping && !rh.collider.isTrigger) {
+					Debug.Log("The Eagle Has Landed.");
+					jumping = false;
+					boyAnimator.SetBool("InAir", false);
+				}
 			}
 		}
-		else if (!jumping){
+		else if (!jumping && rHit.LongLength == 0){
 			Debug.Log("OH GOD WHERE DID THE GROUND GO");
 			jumping = true;
 			boyAnimator.SetBool("InAir", true);
@@ -172,5 +176,13 @@ public class PlayerMotor : MonoBehaviour {
 		forSnap = tf.forward;
 		rigSnap = tf.right;
 	}
-	
+
+	public void RescalePlayer(float newScale) {
+		playerScale *= newScale;
+		tf.localScale = new Vector3(playerScale, playerScale, playerScale);
+		if (GetComponentInChildren<PlayerTrigger>().heldItem != null) {
+			GetComponentInChildren<PlayerTrigger>().heldItem.GetComponent<Transform>().localScale *= newScale;
+		}
+	}
+
 }

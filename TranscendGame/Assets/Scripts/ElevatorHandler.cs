@@ -16,6 +16,7 @@ public class ElevatorHandler : MonoBehaviour {
 	public bool startWithDoorsOpen = false;
 	public Light elevatorLight;
 	public float maxIntensity = 2;
+	public float elevScale = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -63,8 +64,8 @@ public class ElevatorHandler : MonoBehaviour {
 		if (!doorsOpen) {
 			doorsOpen = true;
 			for (int i = 0; i < frames; i++) {
-				door1tf.position += (door1Slide/(float)frames);
-				door2tf.position += (door2Slide/(float)frames);
+				door1tf.position += (door1Slide*elevScale/(float)frames);
+				door2tf.position += (door2Slide*elevScale/(float)frames);
 				elevatorLight.intensity += (maxIntensity/(float)frames);
 				yield return new WaitForFixedUpdate();
 			}
@@ -75,8 +76,8 @@ public class ElevatorHandler : MonoBehaviour {
 		if (doorsOpen) {
 			doorsOpen = false;
 			for (int i = 0; i < frames; i++) {
-				door1tf.position -= (door1Slide/(float)frames);
-				door2tf.position -= (door2Slide/(float)frames);
+				door1tf.position -= (door1Slide*elevScale/(float)frames);
+				door2tf.position -= (door2Slide*elevScale/(float)frames);
 				elevatorLight.intensity -= (maxIntensity/(float)frames);
 				yield return new WaitForFixedUpdate();
 			}
@@ -90,6 +91,8 @@ public class ElevatorHandler : MonoBehaviour {
 		while (true) {
 			Vector3 dPos = tf.rotation * escapeVector;
 			tf.position += dPos;
+			GameObject player = GameObject.FindGameObjectWithTag("player");
+			player.GetComponent<Transform>().position += dPos;
 			yield return new WaitForFixedUpdate();
 		}
 	}
