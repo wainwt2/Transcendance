@@ -53,6 +53,10 @@ public class ElevatorHandler : MonoBehaviour {
 			StartCoroutine(MoveUpwards());
 		}
 		*/
+		if (Input.GetKeyDown(KeyCode.BackQuote)) {
+			Debug.Log ("Cheater. >.>");
+			GameObject.FindGameObjectWithTag("player").GetComponent<Transform>().position = tf.position;
+		}
 	}
 
 	void OnTriggerEnter(Collider other) {
