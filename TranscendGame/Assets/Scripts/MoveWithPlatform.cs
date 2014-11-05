@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MoveWithPlatform : MonoBehaviour {
 
+	GameObject Subject;
+
 	Transform tf;
 
 	Vector3 prevPos;
@@ -10,6 +12,8 @@ public class MoveWithPlatform : MonoBehaviour {
 	Vector3 deltaPos;
 
 	Vector3 curPos;
+
+	bool applyDelta = false;
 
 	// Use this for initialization
 	void Start () {
@@ -20,16 +24,25 @@ public class MoveWithPlatform : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		curPos = tf.position;//get current position at start of update
 		
 		deltaPos = curPos - prevPos;//get difference in position
+
+		if (applyDelta == true) {
+			Subject.GetComponent<Transform>().position += deltaPos;
+		}
+
 		
 		prevPos = tf.position;//set previous position at end of update
+
 	}
 
 	void OnTriggerStay(Collider other) {
-		Debug.Log(other.tag);
-		other.gameObject.GetComponent<Transform>().position += deltaPos;
+		Subject = other.gameObject;
+		applyDelta = true;
+	}
+	void OnTriggerExit(Collider other) {
+		applyDelta = false;
 	}
 }
