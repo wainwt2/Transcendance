@@ -12,7 +12,7 @@ public class ElevatorHandler : MonoBehaviour {
 	private Transform tf;
 	public float upwardSpeed;
 	public bool doorsUnlocked;
-	public bool doorsOpen;
+	public bool doorsOpen = false;
 	public Light elevatorLight;
 	public float maxIntensity = 2;
 
@@ -20,7 +20,6 @@ public class ElevatorHandler : MonoBehaviour {
 	void Start () {
 		elevatorLight.intensity = 0;
 		doorsUnlocked = false;
-		doorsOpen = false;
 		door1tf = door1.GetComponent<Transform>();
 		door2tf = door2.GetComponent<Transform>();
 		tf = GetComponent<Transform>();
@@ -28,10 +27,14 @@ public class ElevatorHandler : MonoBehaviour {
 		door2Slide = new Vector3(2.0f, 0f, 0f);
 		door1Slide = tf.rotation * door1Slide;
 		door2Slide = tf.rotation * door2Slide;
+		if (doorsOpen) {
+			StartCoroutine(OpenDoors(30));
+		}
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		/*
 		if (Input.GetKeyDown(KeyCode.Return)) {
 			Debug.Log ("Opening doors.");
 			StartCoroutine(OpenDoors(30));
@@ -44,6 +47,7 @@ public class ElevatorHandler : MonoBehaviour {
 			Debug.Log ("Moving elevator.");
 			StartCoroutine(MoveUpwards());
 		}
+		*/
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -53,7 +57,7 @@ public class ElevatorHandler : MonoBehaviour {
 		}
 	}
 
-	IEnumerator OpenDoors(int frames) {
+	public IEnumerator OpenDoors(int frames) {
 		if (!doorsOpen) {
 			doorsOpen = true;
 			for (int i = 0; i < frames; i++) {
