@@ -82,6 +82,12 @@ public class ElevatorHandler : MonoBehaviour {
 				yield return new WaitForFixedUpdate();
 			}
 			if (moveUpwardOnFinish) {
+				SkinnedMeshRenderer[] skindex = GameObject.FindObjectsOfType<SkinnedMeshRenderer>();
+				foreach (SkinnedMeshRenderer skin in skindex) {
+					if (skin.gameObject.tag == "playerSkin") {
+						skin.enabled = false;
+					}
+				}
 				StartCoroutine(MoveUpwards());
 			}
 		}

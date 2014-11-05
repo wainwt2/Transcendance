@@ -35,6 +35,7 @@ public class AbsoluteGravityDirection : MonoBehaviour {
 		if (tf.rotation != rotSnap) {
 			Debug.Log("The world is spinning!");
 			foreach (GameObject gravBody in GravBodies) {
+				if (gravBody != null)
 				SetGravity(gravBody);
 			}
 			SetGravity(Player);
