@@ -17,6 +17,7 @@ public class CameraPosition : MonoBehaviour {
 	void Start () {
 		tf = GetComponent<Transform>();
 		meshRender = GetComponent<MeshRenderer>();
+		ShowNodes = false;
 	}
 	
 	// Update is called once per frame
