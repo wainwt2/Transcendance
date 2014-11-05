@@ -66,8 +66,8 @@ public class PlayerMotor : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		// Debug: draw forward line
-		Debug.DrawRay(tf.position, tf.forward * 5, Color.blue);
-		Debug.DrawRay(tf.position, tf.up * 5, Color.green);
+		//Debug.DrawRay(tf.position, tf.forward * 5, Color.blue);
+		//Debug.DrawRay(tf.position, tf.up * 5, Color.green);
 		// realign rotation to gravity
 		if (GetComponent<GravityHandler>().Gravity != gravSnap) {
 			//locRot = Quaternion.FromToRotation(gravForSnap, forSnap);
