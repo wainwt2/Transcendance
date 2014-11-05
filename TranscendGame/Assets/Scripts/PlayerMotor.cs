@@ -36,6 +36,7 @@ public class PlayerMotor : MonoBehaviour {
 	private Quaternion locRot;
 	private Vector3 gravSnap;
 	private Vector3 gravForSnap;
+	private Vector3 forSnap;
 
 	// Use this for initialization
 	void Start () {
@@ -62,13 +63,18 @@ public class PlayerMotor : MonoBehaviour {
 		Debug.DrawRay(tf.position, tf.up * 5, Color.green);
 		// realign rotation to gravity
 		if (GetComponent<GravityHandler>().Gravity != gravSnap) {
-			locRot = Quaternion.FromToRotation(gravForSnap, tf.forward);
-			tf.rotation = Quaternion.LookRotation(locRot * GetComponent<GravityHandler>().gravForward, -GetComponent<GravityHandler>().Gravity);
-			lastAligned = tf.rotation;
+			//locRot = Quaternion.FromToRotation(gravForSnap, forSnap);
+			//Debug.DrawRay(tf.position, locRot * GetComponent<GravityHandler>().gravForward * 10f, Color.yellow);
+			//tf.rotation = Quaternion.LookRotation(locRot * GetComponent<GravityHandler>().gravForward, -GetComponent<GravityHandler>().Gravity);
+			//tf.rotation = tf.rotation * Quaternion.Inverse(locRot);
+			locRot = Quaternion.FromToRotation(gravSnap, GetComponent<GravityHandler>().Gravity);
+			//tf.rotation = Quaternion.LookRotation(locRot * tf.forward, -GetComponent<GravityHandler>().Gravity);
+			lastAligned = lastAligned * locRot;
 		}
 		// Debug: Constantly update target camera position and rotation
 		//lastAligned = tf.rotation;
 		// Update target camera position
+		Debug.DrawRay(tf.position, lastAligned * Vector3.forward);
 		targetPos = lastAligned * kiteString + tf.position;
 		targetRot = Quaternion.LookRotation(lastAligned * -kiteString, -GetComponent<GravityHandler>().Gravity);
 		// Remove any angular velocity
@@ -148,6 +154,7 @@ public class PlayerMotor : MonoBehaviour {
 		rb.angularVelocity = Vector3.zero;
 		gravSnap = GetComponent<GravityHandler>().Gravity;
 		gravForSnap = GetComponent<GravityHandler>().gravForward;
+		forSnap = tf.forward;
 	}
 	
 }
