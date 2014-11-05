@@ -34,9 +34,13 @@ public class PlayerMotor : MonoBehaviour {
 	public Animator boyAnimator;
 	private Vector3 locVel;
 	private Quaternion locRot;
+	private Quaternion locRot2;
+	private Quaternion locRot3;
 	private Vector3 gravSnap;
 	private Vector3 gravForSnap;
+	private Vector3 gravRigSnap;
 	private Vector3 forSnap;
+	private Vector3 rigSnap;
 
 	// Use this for initialization
 	void Start () {
@@ -54,6 +58,7 @@ public class PlayerMotor : MonoBehaviour {
 		targetRot = Quaternion.LookRotation(tf.rotation * -kiteString, -GetComponent<GravityHandler>().Gravity);
 		cameraForward = Vector3.forward;
 		cameraRight = Vector3.right;
+		lastAligned = tf.rotation;
 	}
 	
 	// Update is called once per frame
@@ -67,9 +72,12 @@ public class PlayerMotor : MonoBehaviour {
 			//Debug.DrawRay(tf.position, locRot * GetComponent<GravityHandler>().gravForward * 10f, Color.yellow);
 			//tf.rotation = Quaternion.LookRotation(locRot * GetComponent<GravityHandler>().gravForward, -GetComponent<GravityHandler>().Gravity);
 			//tf.rotation = tf.rotation * Quaternion.Inverse(locRot);
-			locRot = Quaternion.FromToRotation(gravSnap, GetComponent<GravityHandler>().Gravity);
+			//locRot = Quaternion.FromToRotation(gravSnap, GetComponent<GravityHandler>().Gravity);
+			//locRot2 = Quaternion.FromToRotation(Vector3.Cross(gravRigSnap, gravForSnap), Vector3.Cross(cameraRight, cameraForward));
+			//locRot3 = Quaternion.FromToRotation(gravForSnap, cameraForward);
 			//tf.rotation = Quaternion.LookRotation(locRot * tf.forward, -GetComponent<GravityHandler>().Gravity);
-			lastAligned = lastAligned * locRot;
+			//lastAligned = lastAligned * locRot * locRot2;
+			lastAligned = Quaternion.LookRotation(GetComponent<GravityHandler>().gravForward, -GetComponent<GravityHandler>().Gravity);
 		}
 		// Debug: Constantly update target camera position and rotation
 		//lastAligned = tf.rotation;
@@ -154,7 +162,9 @@ public class PlayerMotor : MonoBehaviour {
 		rb.angularVelocity = Vector3.zero;
 		gravSnap = GetComponent<GravityHandler>().Gravity;
 		gravForSnap = GetComponent<GravityHandler>().gravForward;
+		gravRigSnap = GetComponent<GravityHandler>().gravRight;
 		forSnap = tf.forward;
+		rigSnap = tf.right;
 	}
 	
 }
