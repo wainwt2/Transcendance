@@ -6,6 +6,8 @@ public class AdultAnimationScript : MonoBehaviour {
 	Transform tf;
 	Animator anim;
 
+	SkinnedMeshRenderer skinMeshRender;
+
 	GameObject Player;
 
 	public GameObject SpeechTrigger;
@@ -22,6 +24,9 @@ public class AdultAnimationScript : MonoBehaviour {
 	void Start () {
 		tf = GetComponent<Transform>();
 		anim = GetComponent<Animator>();
+
+		skinMeshRender.enabled = false;
+
 		Player = GameObject.FindGameObjectWithTag("player");
 	}
 	
@@ -31,7 +36,7 @@ public class AdultAnimationScript : MonoBehaviour {
 		if (SpeechTrigger != null) {//toggle NPC's talking animation
 			if (SpeechTrigger.GetComponent<TextBoxScript>().ShowCanvas == true) {
 				IsTalking = true;
-				//tf.LookAt(Player.GetComponent<Transform>().position);
+				tf.LookAt(Player.GetComponent<Transform>().position);
 			}
 			else {
 				IsTalking = false;
