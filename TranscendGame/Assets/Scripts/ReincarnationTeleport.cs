@@ -8,11 +8,14 @@ public class ReincarnationTeleport : MonoBehaviour {
 	private Transform otherTf;
 	public Vector3 originOffset;
 	public float scaleFactor = 1;
+	public int songIndex;
+	public GameObject musicHandler;
 
 	// Use this for initialization
 	void Start () {
 		tf = GetComponent<Transform>();
 		otherTf = otherTeleport.GetComponent<Transform>();
+		musicHandler = GameObject.FindGameObjectWithTag("musicHandler");
 	}
 	
 	// Update is called once per frame
@@ -23,8 +26,8 @@ public class ReincarnationTeleport : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "player") {
 			other.GetComponent<Transform>().position = otherTf.position + originOffset;
-			other.GetComponent<Transform>().Rotate(0f, 180f, 0f);
 			other.GetComponent<PlayerMotor>().RescalePlayer(scaleFactor);
+			StartCoroutine(musicHandler.GetComponent<MusicHandler>().FadeSong(songIndex, 60));
 		}
 	}
 }

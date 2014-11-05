@@ -17,9 +17,11 @@ public class ElevatorHandler : MonoBehaviour {
 	public Light elevatorLight;
 	public float maxIntensity = 2;
 	public float elevScale = 1;
+	public GameObject musicHandler;
 
 	// Use this for initialization
 	void Start () {
+		musicHandler = GameObject.FindGameObjectWithTag("musicHandler");
 		elevatorLight.intensity = 0;
 		doorsUnlocked = false;
 		doorsOpen = false;
@@ -57,6 +59,7 @@ public class ElevatorHandler : MonoBehaviour {
 		if (other.gameObject.tag == "player") {
 			other.GetComponent<PlayerMotor>().canMove = false;
 			StartCoroutine(CloseDoors(30, true));
+			StartCoroutine(musicHandler.GetComponent<MusicHandler>().FadeSong(0, 60));
 		}
 	}
 
