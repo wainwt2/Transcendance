@@ -5,7 +5,7 @@ public class RandomPlatformMovement : MonoBehaviour {
 	Transform tf;
 	Renderer renderer;
 
-	float speed = 5f; 
+	float speed = 0.0f; 
 
 	int signX;
 	int signZ;
