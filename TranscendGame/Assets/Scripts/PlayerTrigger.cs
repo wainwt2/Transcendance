@@ -17,6 +17,8 @@ public class PlayerTrigger : MonoBehaviour {
 		if (heldItem != null) {
 			heldItem.GetComponent<Transform>().position = tf.position;
 			heldItem.GetComponent<Transform>().rotation = tf.rotation;
+			heldItem.GetComponent<Rigidbody>().velocity = Vector3.zero;
+			heldItem.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 		}
 	}
 
